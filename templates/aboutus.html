@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="About LOCOTO - Language On Camera - Translate On The Go">
+    <meta name="author" content="LOCOTO Team">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>About Us | LOCOTO - Language On Camera, Translate On The Go</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/css/fontawesome.css">
+    <link rel="stylesheet" href="static/css/templatemo-onix-digital.css">
+    <link rel="stylesheet" href="static/css/animated.css">
+    <link rel="stylesheet" href="static/css/owl.css">
+
+    <style>
+        :root {
+            --primary: #4a90e2;
+            --bg: #f5faff;
+            --text: #1f2d3d;
+            --card: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff;
+            color: var(--text);
+            scroll-behavior: smooth;
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #4a90e2, #6bb9f0);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('static/images/pattern.png') repeat;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            color: var(--primary);
+            margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--primary);
+        }
+
+        .features {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--primary);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .team-grid {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .profile {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 15px;
+            width: 280px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .profile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+        }
+
+        .profile h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        .profile p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+            opacity: 0;
+        }
+
+        .slide-in {
+            animation: slideIn 1.2s ease forwards;
+            opacity: 0;
+        }
+
+        .slide-up {
+            animation: fadeIn 1s ease forwards;
+            opacity: 0;
+        }
+
+        .mission-text {
+            font-size: 1.2em;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        footer {
+            background-color: transparent;
+            text-align: center;
+            /*padding: 30px 0;
+            margin-top: 60px;*/
+            position: relative;
+            z-index: 2;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+            color: #1f2d3d;
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <div class="logo">
+                            <img src="static/images/ChatGPT Image Apr 13, 2025, 03_15_04 PM.png" alt="LOCOTO" width="150" height="150">
+                        </div>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+              <li class="scroll-to-section"><a href="/">Home</a></li>
+              {% if not session.get('logged_in') %}
+                <li class="scroll-to-section"><a href="register">Sign-Up</a></li>
+                <li class="scroll-to-section"><a href="login">Sign-In</a></li>
+              {% else %}
+                <li class="scroll-to-section"><a href="#">Welcome {{ session.get('username') }}</a></li>
+                <li class="scroll-to-section"><a href="upload">Upload</a></li>  
+                {% if session.get('is_admin') %}
+                <li class="scroll-to-section"><a href="admin/users">Admin Panel</a></li>
+                {% endif %}
+                <li class="scroll-to-section"><a href="logout">Logout</a></li>
+              {% endif %}
+              <li class="scroll-to-section"><a href="aboutus" class="active">About Us</a></li>
+              <li class="scroll-to-section"><div class="main-red-button-hover"><a href="#contact">Contact Us Now</a></div></li> 
+            </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>🌐 LOCOTO</h1>
+            <p>Live Optical Character and Translator Output - Bridging Language Gaps Through Technology</p>
+        </div>
+    </header>
+
+    <section class="section fade-in">
+        <h2>Our Mission</h2>
+        <div class="mission-text">
+            <p>LOCOTO transforms image-based text into regional language audio — empowering those affected by language and literacy barriers through OCR, translation, and TTS.</p>
+        </div>
+    </section>
+
+    <section class="section slide-up">
+        <h2>What We Offer</h2>
+        <div class="features">
+            <div class="card">
+                <div class="feature-icon">📷</div>
+                <h3>OCR Text Extraction</h3>
+                <p>Advanced optical character recognition for accurate text extraction from images</p>
+            </div>
+            <div class="card">
+                <div class="feature-icon">🧠</div>
+                <h3>Smart Language Detection</h3>
+                <p>Intelligent language identification for seamless translation</p>
+            </div>
+            <div class="card">
+                <div class="feature-icon">🌍</div>
+                <h3>Regional Translation</h3>
+                <p>Comprehensive support for multiple regional languages</p>
+            </div>
+            <div class="card">
+                <div class="feature-icon">🔊</div>
+                <h3>Text-to-Speech Output</h3>
+                <p>Natural-sounding voice synthesis in regional languages</p>
+            </div>
+            <div class="card">
+                <div class="feature-icon">⚙️</div>
+                <h3>Real-Time Processing</h3>
+                <p>Instant results with optimized processing algorithms</p>
+            </div>
+            <div class="card">
+                <div class="feature-icon">🎨</div>
+                <h3>Accessible Interface</h3>
+                <p>User-friendly design for all levels of technical expertise</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section team fade-in">
+        <h2>Meet the Team</h2>
+        <div class="team-grid">
+            <div class="profile">
+                <h4>Virat Jaiswal</h4>
+                <p>OCR, Translation, TTS, Authentication</p>
+            </div>
+            <div class="profile">
+                <h4>Akshat Jaiswal</h4>
+                <p>UI, Real-time, Regional AI, API Integration</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="contact" class="contact-us section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="section-heading">
+                <h2>Feel free to <em>Contact</em> us via the <span>form</span></h2>
+                <div id="map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1779.8398194660651!2d80.94023014633468!3d26.85013998728267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd1ca1b7057f%3A0x8932f633116edfbc!2sHazratganj%20Metro%20Station!5e0!3m2!1sen!2sin!4v1744560566391!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="info">
+                  <span><i class="fa fa-envelope"></i> <a href="#">info@Locoto.com<br>mail@Locoto.com</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 align-self-center">
+                <form id="contact" action="" method="get">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <input type="text" name="website" id="website" placeholder="Leave Comments" required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="main-button">Submit Request</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+    <div class="footer-dec">
+        <img src="static/images/footer-dec.png" alt="">
+    </div>
+
+    <footer style="height: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright">
+                        <p>Copyright © 2025 LOCOTO | All Rights Reserved.</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/owl-carousel.js"></script>
+    <script src="static/js/animation.js"></script>
+    <script src="static/js/imagesloaded.js"></script>
+    <script src="static/js/custom.js"></script>
+</body>
+</html>

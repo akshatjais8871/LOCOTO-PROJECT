@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Upload images for translation with LOCOTO">
+  <meta name="author" content="LOCOTO">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>LOCOTO - Upload Image</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="static/css/fontawesome.css">
+  <link rel="stylesheet" href="static/css/templatemo-onix-digital.css">
+  <link rel="stylesheet" href="static/css/animated.css">
+  <link rel="stylesheet" href="static/css/owl.css">
+
+  <style>
+    .upload-container {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .upload-area {
+      border: 2px dashed #726ae3;
+      border-radius: 10px;
+      padding: 60px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .upload-area:hover {
+      background-color: #f5f5ff;
+    }
+
+    .upload-icon {
+      font-size: 48px;
+      color: #726ae3;
+      margin-bottom: 15px;
+    }
+
+    .language-select {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .upload-btn {
+      background-color: #726ae3;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .upload-btn:hover {
+      background-color: #5d56d1;
+      transform: translateY(-2px);
+    }
+
+    .preview-area {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .preview-image {
+      max-width: 100%;
+      max-height: 300px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #file-name {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 30px;
+    }
+
+    .section-heading h2 em {
+      color: #726ae3;
+      font-style: normal;
+    }
+
+    .section-heading h2 span {
+      color: #ff565b;
+      font-style: normal;
+    }
+
+    /* Camera styles */
+    .option-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .option-btn {
+      background-color: #f8f9fa;
+      border: 2px solid #726ae3;
+      color: #726ae3;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .option-btn:hover,
+    .option-btn.active {
+      background-color: #726ae3;
+      color: #fff;
+    }
+
+    .option-btn i {
+      margin-right: 8px;
+    }
+
+    #camera-container {
+      display: none;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #camera-feed {
+      width: 100%;
+      max-width: 640px;
+      max-height: 480px;
+      border-radius: 10px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .camera-controls {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .camera-btn {
+      background-color: #726ae3;
+      color: #fff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .camera-btn:hover {
+      background-color: #5d56d1;
+      transform: translateY(-2px);
+    }
+
+    .camera-btn.reset {
+      background-color: #ff565b;
+    }
+
+    .camera-btn.reset:hover {
+      background-color: #e64a4f;
+    }
+
+    #upload-option,
+    #camera-option {
+      display: none;
+    }
+
+    .upload-option-container,
+    .camera-option-container {
+      display: none;
+    }
+
+    .upload-option-container.active,
+    .camera-option-container.active {
+      display: block;
+    }
+
+    .preview-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .loading-container {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #726ae3;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .loading-text {
+      margin-top: 10px;
+      color: #726ae3;
+      font-weight: 600;
+    }
+
+    .translate-button {
+      background-color: #726ae3;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .translate-button:hover {
+      background-color: #5d56d1;
+      transform: translateY(-2px);
+    }
+
+    .translate-button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* Translation Results Styles */
+    .result-container {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      margin-bottom: 40px;
+    }
+
+    .detected-language {
+      margin-top: 15px;
+    }
+
+    .detected-language .badge {
+      font-size: 1rem;
+      padding: 8px 16px;
+      background-color: #726ae3;
+    }
+
+    .translation-card, .audio-card {
+      background-color: #f8f9fa;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .card-header {
+      background-color: #726ae3;
+      color: white;
+      padding: 15px 20px;
+    }
+
+    .card-header h4 {
+      margin: 0;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-body {
+      padding: 25px;
+    }
+
+    .translation-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #2a2a2a;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: white;
+      border-radius: 8px;
+      border: 1px solid #eee;
+      min-height: 100px;
+    }
+
+    .copy-btn, .download-btn {
+      background-color: #726ae3;
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .copy-btn:hover, .download-btn:hover {
+      background-color: #5d56d1;
+      transform: translateY(-2px);
+      color: white;
+    }
+
+    .custom-audio-player {
+      width: 100%;
+      max-width: 500px;
+      height: 40px;
+      margin: 0 auto;
+    }
+
+    .audio-controls {
+      margin-top: 20px;
+    }
+
+    /* Audio player custom styling */
+    audio::-webkit-media-controls-panel {
+      background-color: #f8f9fa;
+    }
+
+    audio::-webkit-media-controls-play-button,
+    audio::-webkit-media-controls-volume-slider,
+    audio::-webkit-media-controls-mute-button {
+      filter: hue-rotate(220deg);
+    }
+
+    @media (max-width: 768px) {
+      .result-container {
+        padding: 20px;
+      }
+
+      .card-header h4 {
+        font-size: 1rem;
+      }
+
+      .translation-text {
+        font-size: 1rem;
+        padding: 10px;
+      }
+
+      .custom-audio-player {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <div class="logo">
+              <img src="static/images/ChatGPT Image Apr 13, 2025, 03_15_04 PM.png" alt="LOCOTO" width="150"
+                height="150">
+            </div>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="/">Home</a></li>
+              {% if not session.get('logged_in') %}
+                <li class="scroll-to-section"><a href="register">Sign-Up</a></li>
+                <li class="scroll-to-section"><a href="login">Sign-In</a></li>
+              {% else %}
+                <li class="scroll-to-section"><a href="#">Welcome {{ session.get('username') }}</a></li>
+                <li class="scroll-to-section"><a href="upload" class="active">Upload</a></li>  
+                {% if session.get('is_admin') %}
+                <li class="scroll-to-section"><a href="admin/users">Admin Panel</a></li>
+                {% endif %}
+                <li class="scroll-to-section"><a href="logout">Logout</a></li>
+              {% endif %}
+              <li class="scroll-to-section"><a href="aboutus">About Us</a></li>
+              <li class="scroll-to-section"><div class="main-red-button-hover"><a href="#contact">Contact Us Now</a></div></li> 
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="top" style="padding-bottom: 60px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Upload <em>Image</em> for <span>Translation</span></h2>
+            <span>🔍 Scan • 🌍 Translate • 🔊 Listen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="upload-section" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="upload-container">
+            <form id="uploadForm" enctype="multipart/form-data">
+              <!-- Input method selection -->
+              <div class="option-buttons">
+                <label class="option-btn active" for="upload-option">
+                  <i class="fa fa-upload"></i> Upload Image
+                </label>
+                <label class="option-btn" for="camera-option">
+                  <i class="fa fa-camera"></i> Use Camera
+                </label>
+                <input type="radio" id="upload-option" name="input-method" value="upload" checked>
+                <input type="radio" id="camera-option" name="input-method" value="camera">
+              </div>
+
+              <!-- Upload option -->
+              <div class="upload-option-container active">
+                <div class="upload-area" id="drop-area" onclick="document.getElementById('file-input').click()">
+                  <div class="upload-icon">
+                    <i class="fa fa-cloud-upload"></i>
+                  </div>
+                  <h4>Drag & Drop or Click to Upload</h4>
+                  <p>Support for JPG, PNG, PDF files</p>
+                  <input type="file" id="file-input" name="image" accept="image/*,.pdf" style="display:none;"
+                    onchange="previewFile()">
+                  <div id="file-name"></div>
+                </div>
+              </div>
+
+              <!-- Camera option -->
+              <div class="camera-option-container">
+                <div id="camera-container">
+                  <video id="camera-feed" autoplay playsinline></video>
+                  <canvas id="canvas" style="display:none;"></canvas>
+                  <div class="camera-controls">
+                    <button type="button" id="capture-btn" class="camera-btn">
+                      <i class="fa fa-camera"></i> Capture
+                    </button>
+                    <button type="button" id="reset-btn" class="camera-btn reset" style="display:none;">
+                      <i class="fa fa-refresh"></i> Reset
+                    </button>
+                  </div>
+                </div>
+                <div class="text-center" id="camera-instructions">
+                  <p>Click "Allow" when prompted to access your camera</p>
+                  <button type="button" id="start-camera" class="upload-btn">
+                    <i class="fa fa-video-camera"></i> Start Camera
+                  </button>
+                </div>
+              </div>
+
+              <div class="row language-select">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="source-language"><strong>Source Language (Detected)</strong></label>
+                    <select class="form-control" id="source-language" name="source-language" disabled>
+                      <option value="auto">Auto Detect</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="target-language"><strong>Target Language</strong></label>
+                    <select class="form-control" id="target-language" name="target-language">
+                      <option value="">Select Language</option>
+                      <option value="en">English</option>
+                      <option value="hi">Hindi</option>
+                      <option value="ta">Tamil</option>
+                      <option value="te">Telugu</option>
+                      <option value="ml">Malayalam</option>
+                      <option value="bn">Bengali</option>
+                      <option value="gu">Gujarati</option>
+                      <option value="kn">Kannada</option>
+                      <option value="mr">Marathi</option>
+                      <option value="pa">Punjabi</option>
+                      <option value="ur">Urdu</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="preview-container">
+                <img id="preview" class="preview-image" alt="Preview">
+              </div>
+
+              <div class="loading-container" id="loadingContainer">
+                <div class="spinner"></div>
+                <div class="loading-text">Processing, please wait...</div>
+              </div>
+
+              <input type="hidden" id="capture-data" name="capture-data">
+
+              <div class="text-center mt-4">
+                <button type="submit" class="translate-button" id="translateButton">
+                  Translate Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Translation Results Section -->
+  <div id="resultSection" class="section" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="result-container wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="section-heading text-center mb-5">
+              <h2>Translation <em>Results</em></h2>
+              <div class="detected-language">
+                <span class="badge bg-primary">Detected Language: <span id="detectedLanguage">-</span></span>
+              </div>
+            </div>
+            
+            <!-- Translation Text Card -->
+            <div class="translation-card">
+              <div class="card-header">
+                <h4><i class="fa fa-language"></i> Translated Text</h4>
+              </div>
+              <div class="card-body">
+                <div class="translation-text" id="translatedText">
+                  <!-- Translation will be inserted here -->
+                </div>
+                <button class="copy-btn" onclick="copyTranslation()">
+                  <i class="fa fa-copy"></i> Copy Text
+                </button>
+              </div>
+            </div>
+
+            <!-- Audio Player Card -->
+            <div class="audio-card mt-4">
+              <div class="card-header">
+                <h4><i class="fa fa-volume-up"></i> Text-to-Speech</h4>
+              </div>
+              <div class="card-body text-center">
+                <audio id="audioPlayer" controls class="custom-audio-player">
+                  <source id="audioSource" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="audio-controls mt-3">
+                  <a id="downloadButton" class="download-btn" download>
+                    <i class="fa fa-download"></i> Download Audio
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="section-heading">
+            <h2>Feel free to <em>Contact</em> us via the <span>form</span></h2>
+            <div id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1779.8398194660651!2d80.94023014633468!3d26.85013998728267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd1ca1b7057f%3A0x8932f633116edfbc!2sHazratganj%20Metro%20Station!5e0!3m2!1sen!2sin!4v1744560566391!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="info">
+              <span><i class="fa fa-envelope"></i> <a href="#">info@Locoto.com<br>mail@Locoto.com</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <form id="contact" action="" method="get">
+            <div class="row">
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
+                    required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="website" id="website" placeholder="Leave Comments" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-button">Submit Request</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="contact-dec">
+      <img src="static/images/contact-dec.png" alt="">
+    </div>
+    <div class="contact-left-dec">
+      <img src="static/images/contact-left-dec.png" alt="">
+    </div>
+  </div>
+
+  <div class="footer-dec">
+    <img src="static/images/footer-dec.png" alt="">
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright">
+            <p>Copyright © 2025 LOCOTO | All Rights Reserved. 
+           </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/js/owl-carousel.js"></script>
+  <script src="static/js/animation.js"></script>
+  <script src="static/js/imagesloaded.js"></script>
+  <script src="static/js/custom.js"></script>
+
+  <script>
+    // For drag and drop functionality
+    const dropArea = document.getElementById('drop-area');
+    const fileInput = document.getElementById('file-input');
+    const previewImage = document.getElementById('preview');
+    const fileName = document.getElementById('file-name');
+    const uploadOption = document.getElementById('upload-option');
+    const cameraOption = document.getElementById('camera-option');
+    const uploadContainer = document.querySelector('.upload-option-container');
+    const cameraContainer = document.querySelector('.camera-option-container');
+    const optionButtons = document.querySelectorAll('.option-btn');
+    const startCameraBtn = document.getElementById('start-camera');
+    const cameraContainer2 = document.getElementById('camera-container');
+    const cameraInstructions = document.getElementById('camera-instructions');
+    const captureBtn = document.getElementById('capture-btn');
+    const resetBtn = document.getElementById('reset-btn');
+    const videoElement = document.getElementById('camera-feed');
+    const canvas = document.getElementById('canvas');
+    const captureData = document.getElementById('capture-data');
+    let stream = null;
+
+    // Prevent default behavior for drag events
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+      dropArea.addEventListener(eventName, preventDefaults, false);
+    });
+
+    function preventDefaults(e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    // Highlight drop area when dragging over it
+    ['dragenter', 'dragover'].forEach(eventName => {
+      dropArea.addEventListener(eventName, highlight, false);
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+      dropArea.addEventListener(eventName, unhighlight, false);
+    });
+
+    function highlight() {
+      dropArea.classList.add('highlight');
+    }
+
+    function unhighlight() {
+      dropArea.classList.remove('highlight');
+    }
+
+    // Handle dropped files
+    dropArea.addEventListener('drop', handleDrop, false);
+
+    function handleDrop(e) {
+      const dt = e.dataTransfer;
+      const files = dt.files;
+      fileInput.files = files;
+      previewFile();
+    }
+
+    // Preview uploaded file
+    function previewFile() {
+      const file = fileInput.files[0];
+      if (file) {
+        fileName.textContent = file.name;
+
+        // Only preview if it's an image
+        if (file.type.startsWith('image/')) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            previewImage.src = e.target.result;
+            previewImage.style.display = 'block';
+          }
+          reader.readAsDataURL(file);
+        } else if (file.type === 'application/pdf') {
+          // Show a generic PDF icon for PDF files
+          previewImage.src = "static/images/pdf-icon.png"; // Make sure to have this icon in your static folder
+          previewImage.style.display = 'block';
+        }
+      }
+    }
+
+    // Add event listener for file input change
+    fileInput.addEventListener('change', previewFile);
+
+    // Toggle between upload and camera options
+    optionButtons.forEach(btn => {
+      btn.addEventListener('click', function () {
+        // Remove active class from all buttons
+        optionButtons.forEach(b => b.classList.remove('active'));
+        // Add active class to clicked button
+        this.classList.add('active');
+
+        // Toggle containers based on selection
+        if (this.getAttribute('for') === 'upload-option') {
+          uploadOption.checked = true;
+          uploadContainer.classList.add('active');
+          cameraContainer.classList.remove('active');
+          stopCamera(); // Stop camera if it was on
+        } else {
+          cameraOption.checked = true;
+          cameraContainer.classList.add('active');
+          uploadContainer.classList.remove('active');
+        }
+      });
+    });
+
+    // Start camera functionality
+    startCameraBtn.addEventListener('click', function () {
+      if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
+          .then(function (mediaStream) {
+            stream = mediaStream;
+            videoElement.srcObject = mediaStream;
+            videoElement.play();
+            cameraContainer2.style.display = 'block';
+            cameraInstructions.style.display = 'none';
+          })
+          .catch(function (err) {
+            console.error("Error accessing camera: ", err);
+            alert("Could not access your camera. Please make sure it's connected and permissions are allowed.");
+          });
+      } else {
+        alert("Sorry, your browser doesn't support accessing the camera.");
+      }
+    });
+
+    // Capture image from camera
+    captureBtn.addEventListener('click', function () {
+      if (stream) {
+        // Draw the video frame to the canvas
+        canvas.width = videoElement.videoWidth;
+        canvas.height = videoElement.videoHeight;
+        canvas.getContext('2d').drawImage(videoElement, 0, 0, canvas.width, canvas.height);
+
+        // Convert canvas to data URL and set to hidden input
+        const imageData = canvas.toDataURL('image/png');
+        captureData.value = imageData;
+
+        // Display the captured image in the preview
+        previewImage.src = imageData;
+        previewImage.style.display = 'block';
+
+        // Show reset button, hide capture button
+        captureBtn.style.display = 'none';
+        resetBtn.style.display = 'inline-block';
+
+        // Optional: Pause the video
+        videoElement.pause();
+      }
+    });
+
+    // Reset camera after capture
+    resetBtn.addEventListener('click', function () {
+      // Clear the captured data
+      captureData.value = '';
+      previewImage.style.display = 'none';
+
+      // Show capture button, hide reset button
+      captureBtn.style.display = 'inline-block';
+      resetBtn.style.display = 'none';
+
+      // Resume the video
+      videoElement.play();
+    });
+
+    // Stop camera when switching away or when page unloads
+    function stopCamera() {
+      if (stream) {
+        stream.getTracks().forEach(track => {
+          track.stop();
+        });
+        stream = null;
+        videoElement.srcObject = null;
+        cameraContainer2.style.display = 'none';
+        cameraInstructions.style.display = 'block';
+        captureBtn.style.display = 'inline-block';
+        resetBtn.style.display = 'none';
+        captureData.value = '';
+      }
+    }
+
+    // Stop camera when leaving page
+    window.addEventListener('beforeunload', stopCamera);
+
+    // Form submission handling
+    document.getElementById('uploadForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const targetLanguage = document.getElementById('target-language').value;
+      if (!targetLanguage) {
+        alert('Please select a target language');
+        return false;
+      }
+
+      // Check if we have an image to submit
+      const hasFileInput = fileInput.files.length > 0;
+      const hasCapturedImage = captureData.value !== '';
+
+      if (!hasFileInput && !hasCapturedImage) {
+        alert('Please upload an image or capture one using your camera');
+        return false;
+      }
+
+      // Show loading state
+      document.querySelector('#translateButton').disabled = true;
+      document.querySelector('#loadingContainer').style.display = 'block';
+
+      // Create FormData object
+      const formData = new FormData();
+      
+      // Add the file if uploaded
+      if (hasFileInput) {
+        formData.append('file', fileInput.files[0]);
+      }
+      // Add the captured image if using camera
+      else if (hasCapturedImage) {
+        // Convert base64 to blob
+        const base64Data = captureData.value.split(',')[1];
+        const byteCharacters = atob(base64Data);
+        const byteArrays = [];
+        for (let i = 0; i < byteCharacters.length; i++) {
+          byteArrays.push(byteCharacters.charCodeAt(i));
+        }
+        const byteArray = new Uint8Array(byteArrays);
+        const blob = new Blob([byteArray], { type: 'image/png' });
+        formData.append('file', blob, 'capture.png');
+      }
+
+      // Add language
+      formData.append('language', targetLanguage);
+
+      // Send the request
+      fetch('/process', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.error) {
+          alert(data.error);
+        } else {
+          // Redirect to results page with the data
+          const params = new URLSearchParams({
+            detected_language: data.detected_language || 'Unknown',
+            translated_text: data.translated_text || 'No translation available',
+            audio_path: data.audio_path || ''
+          });
+          window.location.href = `/results?${params.toString()}`;
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while processing the image');
+      })
+      .finally(() => {
+        // Reset loading state
+        document.querySelector('#translateButton').disabled = false;
+        document.querySelector('#loadingContainer').style.display = 'none';
+      });
+    });
+
+    // Handle orientation changes for mobile devices
+    window.addEventListener('orientationchange', function () {
+      if (stream) {
+        // Briefly stop and restart the camera to adjust to new orientation
+        const tracks = stream.getTracks();
+        tracks.forEach(track => track.stop());
+
+        setTimeout(() => {
+          navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
+            .then(function (mediaStream) {
+              stream = mediaStream;
+              videoElement.srcObject = mediaStream;
+              videoElement.play();
+            });
+        }, 500);
+      }
+    });
+  </script>
+
+  <script>
+    // Acc
+    $(document).on("click", ".naccs .menu div", function () {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+        $(".naccs .menu div").removeClass("active");
+        $(".naccs ul li").removeClass("active");
+
+        $(this).addClass("active");
+        $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+        var listItemHeight = $(".naccs ul")
+          .find("li:eq(" + numberIndex + ")")
+          .innerHeight();
+        $(".naccs ul").height(listItemHeight + "px");
+      }
+    });
+  </script>
+
+  <script>
+    document.getElementById('uploadForm').addEventListener('submit', async (e) => 
+    {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      document.getElementById('loadingSpinner').style.display = 'block';
+      document.getElementById('resultSection').style.display = 'none';
+
+      const response = await fetch('/process', {
+        method: 'POST',
+        body: formData
+      });
+      const data = await response.json();
+      if (response.ok) {
+        document.getElementById('detectedLanguage').textContent = data.detected_language ||
+        'Unknown';
+        document.getElementById('translatedText').textContent = data.translated_text;
+        audioPlayer.src = data.audio_path + '?t=' + new Date().getTime();
+        downloadButton.href = '/download_audio';
+        downloadButton.style.display = 'block';
+        document.getElementById('resultSection').style.display = 'block';
+        alert(data.error || 'An error occurred while processing the image');
+        document.getElementById('loadingSpinner').style.display = 'none';
+      }
+    });    // preview image
+    document.getElementById('file').addEventListener('change', (e) => {
+      const preview = document.getElementById('preview');
+      const previewContainer = document.getElementById('preview-container');
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          preview.src = e.target.result;
+          previewContainer.style.display = 'block';
+        }
+        reader.readAsDataURL(file);
+      } else {
+        previewContainer.style.display = 'none';
+      }
+    });
+
+    // Copy translation text function
+    function copyTranslation() {
+      const translationText = document.getElementById('translatedText').textContent;
+      navigator.clipboard.writeText(translationText).then(() => {
+        const copyBtn = document.querySelector('.copy-btn');
+        const originalText = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<i class="fa fa-check"></i> Copied!';
+        setTimeout(() => {
+          copyBtn.innerHTML = originalText;
+        }, 2000);
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+        alert('Failed to copy text. Please try again.');
+      });
+    }
+
+    // Update form submission handler
+    document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      
+      // Show loading
+      document.getElementById('translateButton').disabled = true;
+      document.getElementById('loadingContainer').style.display = 'block';
+      document.getElementById('resultSection').style.display = 'none';
+
+      try {
+        const response = await fetch('/process', {
+          method: 'POST',
+          body: formData
+        });
+        const data = await response.json();
+        
+        if (data.error) {
+          alert(data.error);
+        } else {
+          // Update results section
+          document.getElementById('detectedLanguage').textContent = data.detected_language || 'Unknown';
+          document.getElementById('translatedText').textContent = data.translated_text || 'No translation available';
+          
+          // Update audio player if audio is available
+          const audioPlayer = document.getElementById('audioPlayer');
+          const audioSource = document.getElementById('audioSource');
+          const downloadButton = document.getElementById('downloadButton');
+          
+          if (data.audio_path) {
+            audioSource.src = data.audio_path + '?t=' + new Date().getTime();
+            audioPlayer.load();
+            downloadButton.href = data.audio_path;
+            downloadButton.style.display = 'inline-flex';
+          } else {
+            audioPlayer.style.display = 'none';
+            downloadButton.style.display = 'none';
+          }
+
+          // Show results section
+          document.getElementById('resultSection').style.display = 'block';
+          
+          // Scroll to results
+          document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth' });
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred while processing the image');
+      } finally {
+        // Reset loading state
+        document.getElementById('translateButton').disabled = false;
+        document.getElementById('loadingContainer').style.display = 'none';
+      }
+    });
+  </script>
+</body>
+
+</html>

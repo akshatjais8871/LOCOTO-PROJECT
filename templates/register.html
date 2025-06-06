@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Register for LOCOTO - Language On Camera - Translate On The Go">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>LOCOTO - Register</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/css/fontawesome.css">
+    <link rel="stylesheet" href="static/css/templatemo-onix-digital.css">
+    <link rel="stylesheet" href="static/css/animated.css">
+    <link rel="stylesheet" href="static/css/owl.css">
+
+    <style>
+        .register-section {
+            margin-top: 120px;
+            padding: 80px 0;
+        }
+
+        .register-card {
+            display: flex;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        .card-left {
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .card-left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-right {
+            width: 50%;
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .register-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            color: #a05334;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .register-welcome {
+            font-size: 18px;
+            margin-bottom: 40px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: #2a2a2a;
+        }
+
+        .register-input-group {
+            margin-bottom: 20px;
+        }
+
+        .register-input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2a2a2a;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .register-input-group input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #eee;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s;
+        }
+
+        .register-input-group input:focus {
+            border-color: #03a4ed;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(3, 164, 237, 0.1);
+        }
+
+        .register-input-group .error-message {
+            color: #dc3545;
+            font-size: 12px;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .register-input-group input.is-invalid {
+            border-color: #dc3545;
+        }
+
+        .register-input-group input.is-invalid + .error-message {
+            display: block;
+        }
+
+        .register-input-group input.is-valid {
+            border-color: #28a745;
+        }
+
+        .password-requirements {
+            font-size: 12px;
+            color: #666;
+            margin: 5px 0;
+            padding-left: 15px;
+        }
+
+        .email-requirements {
+            font-size: 12px;
+            color: #666;
+            margin: 5px 0;
+            padding-left: 15px;
+            list-style: none;
+        }
+
+        .email-requirements li, .password-requirements li {
+            margin: 3px 0;
+        }
+
+        .email-requirements li.valid, .password-requirements li.valid {
+            color: #28a745;
+        }
+
+        .email-requirements li.invalid, .password-requirements li.invalid {
+            color: #dc3545;
+        }
+
+        .register-btn {
+            padding: 12px 40px;
+            background-image: linear-gradient(to right, #1e3c72 0%, #03a4ed 51%, #1e3c72 100%);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.5s;
+            background-size: 200% auto;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .register-btn:hover {
+            background-position: right center;
+        }
+
+        .or-divider {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #999;
+            position: relative;
+        }
+
+        .or-divider::before,
+        .or-divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            height: 1px;
+            background-color: #eee;
+        }
+
+        .or-divider::before {
+            left: 0;
+        }
+
+        .or-divider::after {
+            right: 0;
+        }
+
+        .google-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 12px;
+            background-color: #fff;
+            color: #555;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .google-btn:hover {
+            background-color: #f8f8f8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .google-btn .google-icon {
+            margin-right: 10px;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .login-link a {
+            color: #03a4ed;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-link a:hover {
+            color: #1e3c72;
+        }
+
+        @media (max-width: 768px) {
+            .register-card {
+                flex-direction: column;
+            }
+
+            .card-left {
+                display: none;
+            }
+
+            .card-right {
+                width: 100%;
+                padding: 30px;
+            }
+
+            .register-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <div class="logo">
+              <img src="static/images/ChatGPT Image Apr 13, 2025, 03_15_04 PM.png" alt="LOCOTO" width="150" height="150">
+            </div>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="/">Home</a></li>
+              {% if not session.get('logged_in') %}
+                <li class="scroll-to-section"><a href="register" class="active">Sign-Up</a></li>
+                <li class="scroll-to-section"><a href="login">Sign-In</a></li>
+              {% else %}
+                <li class="scroll-to-section"><a href="#">Welcome {{ session.get('username') }}</a></li>
+                <li class="scroll-to-section"><a href="upload">Upload</a></li>  
+                {% if session.get('is_admin') %}
+                <li class="scroll-to-section"><a href="admin/users">Admin Panel</a></li>
+                {% endif %}
+                <li class="scroll-to-section"><a href="logout">Logout</a></li>
+              {% endif %}
+              <li class="scroll-to-section"><a href="aboutus">About Us</a></li>
+               
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="register-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="register-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="card-left">
+              <img src="static/images/Sign.jpeg" alt="Sign">
+            </div>
+            <div class="card-right">
+              <h1 class="register-title">LOCOTO</h1>
+              <h2 class="register-welcome">Create Your Account</h2>
+              <form action="#" method="POST" id="registerForm" novalidate>
+                <div class="register-input-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                  <ul class="email-requirements">
+                    <li id="emailFormat">Valid email format (e.g., user@domain.com)</li>
+                    <li id="emailLength">Email length between 5 and 50 characters</li>
+                    <li id="emailDomain">Valid domain with proper extension</li>
+                  </ul>
+                </div>
+                <div class="register-input-group">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" name="username" required minlength="3" maxlength="20">
+                  <div class="error-message">Username must be 3-20 characters long and contain only letters, numbers, and underscores</div>
+                </div>
+                <div class="register-input-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" required>
+                  <ul class="password-requirements">
+                    <li id="length">At least 8 characters long</li>
+                    <li id="uppercase">Contains uppercase letter</li>
+                    <li id="lowercase">Contains lowercase letter</li>
+                    <li id="number">Contains number</li>
+                    <li id="special">Contains special character</li>
+                  </ul>
+                </div>
+                <div class="register-input-group">
+                  <label for="confirm_password">Confirm Password</label>
+                  <input type="password" id="confirm_password" name="confirm_password" required>
+                  <div class="error-message">Passwords do not match</div>
+                </div>
+                <button type="submit" class="register-btn" id="submitBtn" disabled>Sign Up</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-dec">
+    <img src="static/images/footer-dec.png" alt="">
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright">
+            <p>Copyright © 2025 LOCOTO | All Rights Reserved. 
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/js/owl-carousel.js"></script>
+  <script src="static/js/animation.js"></script>
+  <script src="static/js/imagesloaded.js"></script>
+  <script src="static/js/custom.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('registerForm');
+      const email = document.getElementById('email');
+      const username = document.getElementById('username');
+      const password = document.getElementById('password');
+      const confirmPassword = document.getElementById('confirm_password');
+      const submitBtn = document.getElementById('submitBtn');
+
+      // Email validation criteria
+      const emailRequirements = {
+        emailFormat: value => /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(value),
+        emailLength: value => value.length >= 5 && value.length <= 50,
+        emailDomain: value => {
+          const domain = value.split('@')[1];
+          return domain && /^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$/.test(domain);
+        }
+      };
+
+      // Email validation
+      email.addEventListener('input', function() {
+        const value = this.value;
+        let isValid = true;
+
+        // Check each email requirement
+        Object.keys(emailRequirements).forEach(req => {
+          const li = document.getElementById(req);
+          const meetsRequirement = emailRequirements[req](value);
+          li.classList.toggle('valid', meetsRequirement);
+          li.classList.toggle('invalid', !meetsRequirement);
+          isValid = isValid && meetsRequirement;
+        });
+
+        this.classList.toggle('is-valid', isValid);
+        this.classList.toggle('is-invalid', !isValid);
+        validateForm();
+      });
+
+      // Username validation
+      username.addEventListener('input', function() {
+        const isValid = /^[a-zA-Z0-9_]{3,20}$/.test(this.value);
+        this.classList.toggle('is-valid', isValid);
+        this.classList.toggle('is-invalid', !isValid);
+        validateForm();
+      });
+
+      // Password validation
+      const requirements = {
+        length: value => value.length >= 8,
+        uppercase: value => /[A-Z]/.test(value),
+        lowercase: value => /[a-z]/.test(value),
+        number: value => /[0-9]/.test(value),
+        special: value => /[!@#$%^&*]/.test(value)
+      };
+
+      password.addEventListener('input', function() {
+        const value = this.value;
+        let isValid = true;
+
+        // Check each requirement
+        Object.keys(requirements).forEach(req => {
+          const li = document.getElementById(req);
+          const meetsRequirement = requirements[req](value);
+          li.classList.toggle('valid', meetsRequirement);
+          li.classList.toggle('invalid', !meetsRequirement);
+          isValid = isValid && meetsRequirement;
+        });
+
+        this.classList.toggle('is-valid', isValid);
+        this.classList.toggle('is-invalid', !isValid);
+        validateForm();
+        
+        // Check confirm password
+        if (confirmPassword.value) {
+          validateConfirmPassword();
+        }
+      });
+
+      // Confirm password validation
+      function validateConfirmPassword() {
+        const isValid = confirmPassword.value === password.value;
+        confirmPassword.classList.toggle('is-valid', isValid);
+        confirmPassword.classList.toggle('is-invalid', !isValid);
+        return isValid;
+      }
+
+      confirmPassword.addEventListener('input', function() {
+        validateConfirmPassword();
+        validateForm();
+      });
+
+      // Overall form validation
+      function validateForm() {
+        const isEmailValid = email.classList.contains('is-valid');
+        const isUsernameValid = username.classList.contains('is-valid');
+        const isPasswordValid = password.classList.contains('is-valid');
+        const isConfirmPasswordValid = confirmPassword.classList.contains('is-valid');
+
+        submitBtn.disabled = !(isEmailValid && isUsernameValid && isPasswordValid && isConfirmPasswordValid);
+      }
+
+      // Form submission
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (!submitBtn.disabled) {
+          // Form is valid, proceed with submission
+          this.submit();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

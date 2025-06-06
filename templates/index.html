@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- PWA Support -->
+  <link rel="manifest" href="/static/manifest.json">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="LOCOTO">
+  <link rel="apple-touch-icon" href="/static/images/logo.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <title>LOCOTO</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="static/css/fontawesome.css">
+  <link rel="stylesheet" href="static/css/templatemo-onix-digital.css">
+  <link rel="stylesheet" href="static/css/animated.css">
+  <link rel="stylesheet" href="static/css/owl.css">
+  <style>
+    /* Custom Animations */
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Translucent Effects */
+    .translucent-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .translucent-card:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-5px);
+    }
+
+    /* Animation Classes */
+    .float-animation {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .pulse-animation {
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    /* Enhanced Header Text */
+    .header-text h1,
+    .header-text h6 {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Service Cards Enhancement */
+    .item {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Contact Form Enhancement */
+    .contact-us form {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    /* Portfolio Items Enhancement */
+    .thumb {
+      overflow: hidden;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .thumb:hover {
+      transform: scale(1.05);
+    }
+
+    .thumb img {
+      transition: all 0.3s ease;
+    }
+
+    .thumb:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Hindi Taglines Styles */
+    .hindi-tagline {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      line-height: 1.4;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .transliteration {
+      font-size: 1.4rem;
+      color: #666;
+      margin-bottom: 15px;
+      font-style: italic;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 20px;
+      border-radius: 25px;
+      display: inline-block;
+    }
+
+    .translation {
+      font-size: 1.5rem;
+      color: #4a90e2;
+      font-weight: 600;
+      background: rgba(74, 144, 226, 0.1);
+      padding: 15px 25px;
+      border-radius: 30px;
+      display: inline-block;
+      box-shadow: 0 4px 15px rgba(74, 144, 226, 0.2);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .col-lg-6.align-self-center {
+        width: 100%;
+      }
+      .main-banner .right-image {
+        display: none;
+      }
+      .owl-banner {
+        padding: 0 15px;
+      }
+      .item.header-text {
+        text-align: center;
+      }
+      .down-buttons {
+        justify-content: center;
+      }
+    }
+
+    /* Mobile Menu Styles */
+    .menu-trigger {
+      display: none;
+      font-size: 24px;
+      color: #2a2a2a;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .menu-trigger:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    @media (max-width: 991px) {
+      .menu-trigger {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .main-nav .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        border-radius: 0 0 15px 15px;
+      }
+
+      .main-nav .nav.active {
+        display: block;
+        animation: slideDown 0.3s ease-out forwards;
+      }
+
+      .main-nav .nav li {
+        display: block;
+        margin: 15px 0;
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 0.3s ease-out forwards;
+        animation-delay: calc(0.1s * var(--item-index));
+      }
+
+      .header-area .main-nav .nav li a {
+        padding: 10px 0;
+        width: 100%;
+        display: block;
+        color: #2a2a2a;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .header-area .main-nav .nav li a:hover {
+        color: #4a90e2;
+        transform: translateX(5px);
+      }
+
+      .main-nav .nav li .main-red-button-hover {
+        margin-top: 15px;
+      }
+
+      /* Animation for mobile menu */
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateX(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    }
+
+    /* Improved Navbar and Sidebar Styles */
+    .menu-trigger {
+      display: none;
+      font-size: 28px;
+      color: #2a2a2a;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      z-index: 1002;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .menu-trigger:hover {
+      transform: scale(1.1);
+    }
+
+    .menu-trigger.active {
+      color: #4a90e2;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 300px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(10px);
+      z-index: 1001;
+      transition: all 0.3s ease;
+      padding: 80px 20px 20px;
+      box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+      overflow-y: auto;
+    }
+
+    .sidebar.active {
+      right: 0;
+    }
+
+    .sidebar .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .sidebar .nav li {
+      opacity: 0;
+      transform: translateX(20px);
+      transition: all 0.3s ease;
+    }
+
+    .sidebar.active .nav li {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .sidebar .nav li a {
+      color: #2a2a2a;
+      font-size: 1.1em;
+      padding: 12px 15px;
+      display: block;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      text-align: left;
+    }
+
+    .sidebar .nav li a:hover {
+      background: rgba(74, 144, 226, 0.1);
+      color: #4a90e2;
+      transform: translateX(5px);
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(3px);
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    @media (max-width: 991px) {
+      .menu-trigger {
+        display: flex;
+      }
+
+      .header-area .main-nav .nav {
+        display: none;
+      }
+
+      .sidebar .nav li {
+        transition-delay: calc(0.1s * var(--item-index));
+      }
+
+      .logo {
+        max-width: 120px;
+      }
+
+      .logo img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<!--TemplateMo 565 Onix Digital https://templatemo.com/tm-565-onix-digital-->
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <div class="logo">
+              <img src="/static/images/ChatGPT Image Apr 13, 2025, 03_15_04 PM.png" alt="LOCOTO" width="150"
+                height="150">
+            </div>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
+              {% if not session.get('logged_in') %}
+              <li class="scroll-to-section"><a href="register">Sign-Up</a></li>
+              <li class="scroll-to-section"><a href="login">Sign-In</a></li>
+              {% else %}
+              <li class="scroll-to-section"><a href="#">Welcome {{ session.get('username') }}</a></li>
+              <li class="scroll-to-section"><a href="upload">Upload</a></li>
+              {% if session.get('is_admin') %}
+              <li class="scroll-to-section"><a href="admin/users">Admin Panel</a></li>
+              {% endif %}
+              <li class="scroll-to-section"><a href="logout">Logout</a></li>
+              {% endif %}
+              <li class="scroll-to-section"><a href="aboutus">About Us</a></li>
+              <li class="scroll-to-section">
+                <div class="main-red-button-hover"><a href="#contact">Contact Us Now</a></div>
+              </li>
+            </ul>            <button class='menu-trigger'>
+              <i class="fas fa-bars"></i>
+            </button>
+            <!-- Sidebar -->
+            <!-- <div class="sidebar">
+              <ul class="nav">
+                <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
+                {% if not session.get('logged_in') %}
+                <li class="scroll-to-section"><a href="register">Sign-Up</a></li>
+                <li class="scroll-to-section"><a href="login">Sign-In</a></li>
+                {% else %}
+                <li class="scroll-to-section"><a href="#">Welcome {{ session.get('username') }}</a></li>
+                <li class="scroll-to-section"><a href="upload">Upload</a></li>
+                {% if session.get('is_admin') %}
+                <li class="scroll-to-section"><a href="admin/users">Admin Panel</a></li>
+                {% endif %}
+                <li class="scroll-to-section"><a href="logout">Logout</a></li>
+                {% endif %}
+                <li class="scroll-to-section"><a href="aboutus">About Us</a></li>
+                <li class="scroll-to-section">
+                  <div class="main-red-button-hover"><a href="#contact">Contact Us Now</a></div>
+                </li>
+              </ul>
+            </div> -->
+            <!-- Overlay -->
+            <div class="overlay"></div>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="owl-carousel owl-banner">
+                <div class="item header-text fade-in-up">
+                  <h1 class="float-animation">🌍 LOCOTO</h1>
+                  <h6 class="pulse-animation"><em>– Language Without Barriers</em></h6>
+                  <p>📸 Scan. Translate. Listen. Understand.</p>
+                  <div class="down-buttons">
+                    <div class="main-blue-button-hover translucent-card">
+                      <a href="#contact">Message Us Now</a>
+                    </div>
+                    <div class="call-button">
+                    </div>
+                  </div>
+                </div>
+                <div class="item header-text fade-in-up">
+                  <div class="hindi-tagline"> हर भाषा की आवाज़, हर दिल के शब्द।</div>
+                  <div class="transliteration">🎵 Har bhasha ki awaaz, har dil ki baat.</div>
+                  <div class="translation">💬 Voice of every language, words from every heart.</div>
+                </div>
+                <div class="item header-text fade-in-up">
+                  <div class="hindi-tagline"> ઈમેજથી અવાજ સુધી — ભાષા હવે કોઈ અવરોધ નથી</div>
+                  <div class="transliteration">📸 Image se awaaz tak — ab bhasha koi baadha nahi.</div>
+                  <div class="translation">🔊 From image to voice — no more language barriers.</div>
+                </div>
+                <div class="item header-text fade-in-up">
+                  <div class="hindi-tagline">இப்போது ஒவ்வொரு படமும் உங்கள் மொழியில் பேசும்.</div>
+                  <div class="transliteration">🖼️ Ab har tasveer bolegi aapki bhasha mein.</div>
+                  <div class="translation">🗣️ Now every picture will speak your language.</div>
+                </div>
+                <div class="item header-text fade-in-up">
+                  <div class="hindi-tagline">तंत्रज्ञान जे एकत्र आणते, ते भाषेला तोडत नाही.</div>
+                  <div class="transliteration">⚡ Takneek jo jode, bhasha nahi tode.</div>
+                  <div class="translation">🌐 Technology that connects, not divides through language.</div>
+                </div>
+                <div class="item header-text fade-in-up">
+                  <div class="hindi-tagline">ਤਸਵੀਰਾਂ ਦੀ ਭਾਸ਼ਾ, ਤੁਹਾਡੇ ਸ਼ਬਦਾਂ ਵਿੱਚ।</div>
+                  <div class="transliteration">📷 Tasveeron ki zubaan, aapki boli mein.</div>
+                  <div class="translation">💭 The language of images — in your dialect.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="our-services section">
+    <div class="services-right-dec">
+      <img src="static/images/services-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="services-left-dec">
+        <img src="static/images/services-left-dec.png" alt="">
+      </div>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading fade-in-up">
+            <h2>🧠How<em> It</em> Works With<span> Our Tools</span></h2>
+            <span>Our Services</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-services">
+            <div class="item translucent-card fade-in-up">
+              <h4>Scan an Image </h4>
+              <div class="icon"><img src="static/images/service-icon-01.png" alt=""></div>
+              <p> Upload a photo or scan a document with text.</p>
+            </div>
+            <div class="item translucent-card fade-in-up">
+              <h4>Instant OCR & Language Detection</h4>
+              <div class="icon"><img src="static/images/service-icon-02.png" alt=""></div>
+              <p>Our engine reads the text and detects the language instantly.</p>
+            </div>
+            <div class="item translucent-card fade-in-up">
+              <h4>Real-Time Translationt</h4>
+              <div class="icon"><img src="static/images/service-icon-03.png" alt=""></div>
+              <p>Converts it to your chosen regional language, preserving cultural and linguistic nuances.</p>
+            </div>
+            <div class="item translucent-card fade-in-up">
+              <h4>Text-to-Speech (TTS)</h4>
+              <div class="icon"><img src="static/images/service-icon-04.png" alt=""></div>
+              <p>Prefer listening? Our TTS engine reads the translation aloud for you!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio" class="our-portfolio section">
+    <div class="portfolio-left-dec">
+      <img src="static/images/portfolio-left-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2>Our Recent <em>Research</em> &amp; Case Studies <span>for our project</span></h2>
+            <span>Our Portfolio</span>
+          </div>
+        </div>
+      </div>
+    </div>    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="portfolio-items d-flex justify-content-center">
+            <div class="item mx-3" style="width: 45%;">
+              <div class="thumb">
+                <img src="static/images/TOI.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="item mx-3" style="width: 45%;">
+              <div class="thumb">
+                <img src="static/images/TOI2.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="section-heading fade-in-up">
+            <h2>Feel free to <em>Contact</em> us via the <span>form</span></h2>
+            <div id="map" class="translucent-card">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1779.8398194660651!2d80.94023014633468!3d26.85013998728267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd1ca1b7057f%3A0x8932f633116edfbc!2sHazratganj%20Metro%20Station!5e0!3m2!1sen!2sin!4v1744560566391!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="info translucent-card">
+              <span><i class="fa fa-envelope"></i> <a href="#">info@Locoto.com<br>mail@Locoto.com</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <form id="contact" action="" method="get" class="translucent-card">
+            <div class="row">
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div the="col-lg-12">
+                <fieldset>
+                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
+                    required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="website" id="website" placeholder="Leave Comments" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-button pulse-animation">Submit Request</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="contact-dec">
+      <img src="static/images/contact-dec.png" alt="">
+    </div>
+    <div class="contact-left-dec">
+      <img src="static/images/contact-left-dec.png" alt="">
+    </div>
+  </div>
+
+  <div class="footer-dec">
+    <img src="static/images/footer-dec.png" alt="">
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright">
+            <p>Copyright © 2025 LOCOTO | All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/js/owl-carousel.js"></script>
+  <script src="static/js/animation.js"></script>
+  <script src="static/js/imagesloaded.js"></script>
+  <script src="static/js/custom.js"></script>
+  <script>    // Navbar Toggle
+    $(document).ready(function() {
+      // Add index to menu items for staggered animation
+      $('.sidebar .nav li').each(function(index) {
+        $(this).css('--item-index', index + 1);
+      });
+
+      $('.menu-trigger').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.sidebar').toggleClass('active');
+        $('.overlay').toggleClass('active');
+        $('.menu-trigger i').toggleClass('fa-bars fa-times');
+      });
+
+      $('.overlay, .sidebar a').on('click', function(e) {
+        $('.menu-trigger').removeClass('active');
+        $('.sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+        $('.menu-trigger i').removeClass('fa-times').addClass('fa-bars');
+      });
+    });
+
+    // Acc
+    $(document).on("click", ".naccs .menu div", function () {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+        $(".naccs .menu div").removeClass("active");
+        $(".naccs ul li").removeClass("active");
+
+        $(this).addClass("active");
+        $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+        var listItemHeight = $(".naccs ul")
+          .find("li:eq(" + numberIndex + ")")
+          .innerHeight();
+        $(".naccs ul").height(listItemHeight + "px");
+      }
+    });
+
+    // Register Service Worker for PWA support
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/static/sw.js')
+          .then(registration => {
+            console.log('ServiceWorker registration successful');
+          })
+          .catch(err => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
+  </script>
+</body>
+
+</html>

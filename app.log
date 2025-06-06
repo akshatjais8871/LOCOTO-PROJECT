@@ -1,0 +1,1022 @@
+2025-04-24 12:52:39,236 - __main__ - DEBUG - Request received
+2025-04-24 12:52:39,240 - __main__ - DEBUG - Files in request: ['image']
+2025-04-24 12:52:39,240 - __main__ - DEBUG - Form data in request: ['input-method', 'target-language', 'capture-data']
+2025-04-24 12:52:39,243 - __main__ - ERROR - No file part in the request
+2025-04-24 12:52:50,103 - __main__ - DEBUG - Request received
+2025-04-24 12:52:50,106 - __main__ - DEBUG - Files in request: ['image']
+2025-04-24 12:52:50,106 - __main__ - DEBUG - Form data in request: ['input-method', 'target-language', 'capture-data']
+2025-04-24 12:52:50,106 - __main__ - ERROR - No file part in the request
+2025-04-24 12:54:21,725 - __main__ - DEBUG - Request received
+2025-04-24 12:54:21,731 - __main__ - DEBUG - Files in request: ['file']
+2025-04-24 12:54:21,737 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-24 12:54:21,737 - __main__ - DEBUG - File name: White Minimalist Values and Goals A3 Poster.png
+2025-04-24 12:54:21,737 - __main__ - DEBUG - Selected language: kn
+2025-04-24 12:54:21,737 - __main__ - ERROR - Invalid language selection
+2025-04-24 12:54:43,051 - __main__ - DEBUG - Request received
+2025-04-24 12:54:43,060 - __main__ - DEBUG - Files in request: ['file']
+2025-04-24 12:54:43,060 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-24 12:54:43,061 - __main__ - DEBUG - File name: White Minimalist Values and Goals A3 Poster.png
+2025-04-24 12:54:43,061 - __main__ - DEBUG - Selected language: en
+2025-04-24 12:54:43,061 - __main__ - ERROR - Invalid language selection
+2025-04-24 12:56:02,356 - __main__ - DEBUG - Request received
+2025-04-24 12:56:02,356 - __main__ - DEBUG - Files in request: ['file']
+2025-04-24 12:56:02,356 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-24 12:56:02,356 - __main__ - DEBUG - File name: telugu.jpg
+2025-04-24 12:56:02,356 - __main__ - DEBUG - Selected language: en
+2025-04-24 12:56:02,356 - __main__ - ERROR - Invalid language selection
+2025-04-24 12:59:01,770 - __main__ - DEBUG - Request received
+2025-04-24 12:59:01,773 - __main__ - DEBUG - Files in request: ['file']
+2025-04-24 12:59:01,773 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-24 12:59:01,774 - __main__ - DEBUG - File name: telugu.jpg
+2025-04-24 12:59:01,774 - __main__ - DEBUG - Selected language: en
+2025-04-24 12:59:01,774 - __main__ - ERROR - Invalid language selection
+2025-04-24 13:00:45,328 - __main__ - DEBUG - Request received
+2025-04-24 13:00:45,334 - __main__ - DEBUG - Files in request: ['file']
+2025-04-24 13:00:45,335 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-24 13:00:45,336 - __main__ - DEBUG - File name: telugu.jpg
+2025-04-24 13:00:45,337 - __main__ - DEBUG - Selected language code: en
+2025-04-24 13:00:45,337 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-24 13:00:45,338 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-24 13:00:45,601 - __main__ - DEBUG - Image opened successfully: WEBP, size: (480, 268)
+2025-04-24 13:00:45,622 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-24 13:00:45,625 - __main__ - ERROR - Failed to process image
+2025-04-24 13:01:39,980 - __main__ - DEBUG - Request received
+2025-04-24 13:01:39,984 - __main__ - DEBUG - Files in request: ['file']
+2025-04-24 13:01:39,984 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-24 13:01:39,984 - __main__ - DEBUG - File name: telugu.jpg
+2025-04-24 13:01:39,984 - __main__ - DEBUG - Selected language code: en
+2025-04-24 13:01:39,984 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-24 13:01:39,984 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-24 13:01:40,149 - __main__ - DEBUG - Image opened successfully: WEBP, size: (480, 268)
+2025-04-24 13:01:40,149 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-24 13:01:43,599 - __main__ - DEBUG - Detected language: te
+2025-04-24 13:18:24,972 - __main__ - DEBUG - Request received
+2025-04-24 13:18:24,977 - __main__ - DEBUG - Files in request: ['file']
+2025-04-24 13:18:24,977 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-24 13:18:24,977 - __main__ - DEBUG - File name: telugu.jpg
+2025-04-24 13:18:24,977 - __main__ - DEBUG - Selected language code: bn
+2025-04-24 13:18:24,977 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-24 13:18:24,977 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-24 13:18:25,128 - __main__ - DEBUG - Image opened successfully: WEBP, size: (480, 268)
+2025-04-24 13:18:25,135 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-24 13:18:28,734 - __main__ - DEBUG - Detected language: te
+2025-04-24 13:20:28,905 - __main__ - DEBUG - Request received
+2025-04-24 13:20:28,905 - __main__ - DEBUG - Files in request: ['file']
+2025-04-24 13:20:28,905 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-24 13:20:28,905 - __main__ - DEBUG - File name: telugu.jpg
+2025-04-24 13:20:28,909 - __main__ - DEBUG - Selected language code: en
+2025-04-24 13:20:28,909 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-24 13:20:28,909 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-24 13:20:28,929 - __main__ - DEBUG - Image opened successfully: WEBP, size: (480, 268)
+2025-04-24 13:20:28,929 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-24 13:20:30,344 - __main__ - DEBUG - Detected language: te
+2025-04-24 13:20:30,827 - __main__ - DEBUG - Translated text: Victory to India
+2025-04-24 13:20:44,944 - __main__ - DEBUG - Request received
+2025-04-24 13:20:44,948 - __main__ - DEBUG - Files in request: ['file']
+2025-04-24 13:20:44,948 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-24 13:20:44,948 - __main__ - DEBUG - File name: telugu.jpg
+2025-04-24 13:20:44,948 - __main__ - DEBUG - Selected language code: en
+2025-04-24 13:20:44,948 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-24 13:20:44,948 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-24 13:20:44,968 - __main__ - DEBUG - Image opened successfully: WEBP, size: (480, 268)
+2025-04-24 13:20:44,968 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-24 13:20:46,426 - __main__ - DEBUG - Detected language: te
+2025-04-24 13:20:46,982 - __main__ - DEBUG - Translated text: Victory to India
+2025-04-24 13:23:15,627 - __main__ - DEBUG - Request received
+2025-04-24 13:23:15,637 - __main__ - DEBUG - Files in request: ['file']
+2025-04-24 13:23:15,637 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-24 13:23:15,637 - __main__ - DEBUG - File name: telugu.jpg
+2025-04-24 13:23:15,638 - __main__ - DEBUG - Selected language code: hi
+2025-04-24 13:23:15,638 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-24 13:23:15,638 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-24 13:23:15,658 - __main__ - DEBUG - Image opened successfully: WEBP, size: (480, 268)
+2025-04-24 13:23:15,660 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-24 13:23:17,272 - __main__ - DEBUG - Detected language: te
+2025-04-24 13:25:07,229 - __main__ - DEBUG - Request received
+2025-04-24 13:25:07,236 - __main__ - DEBUG - Files in request: ['file']
+2025-04-24 13:25:07,236 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-24 13:25:07,236 - __main__ - DEBUG - File name: tamil.jpg
+2025-04-24 13:25:07,236 - __main__ - DEBUG - Selected language code: en
+2025-04-24 13:25:07,239 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-24 13:25:07,239 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-24 13:25:07,272 - __main__ - DEBUG - Image opened successfully: JPEG, size: (500, 500)
+2025-04-24 13:25:07,283 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-24 13:25:08,863 - __main__ - DEBUG - Detected language: te
+2025-04-24 13:25:09,552 - __main__ - DEBUG - Translated text: Don't peel.
+Unauthorized personnel are not allowed.
+2025-04-24 14:27:57,465 - __main__ - DEBUG - Request received
+2025-04-24 14:27:57,465 - __main__ - DEBUG - Files in request: ['file']
+2025-04-24 14:27:57,465 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-24 14:27:57,465 - __main__ - DEBUG - File name: just-good-thought-original-imagf97q8huhrjgh.webp
+2025-04-24 14:27:57,465 - __main__ - DEBUG - Selected language code: hi
+2025-04-24 14:27:57,465 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-24 14:27:57,465 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-24 14:27:57,742 - __main__ - DEBUG - Image opened successfully: WEBP, size: (667, 1000)
+2025-04-24 14:27:57,792 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-24 14:28:02,520 - __main__ - DEBUG - Detected text: Just Good
+Thought
+
+Look at the world from a practical perspective
+
+Anubhav Shrivastava
+2025-04-24 14:28:03,309 - __main__ - DEBUG - Detected language: en
+2025-04-25 14:16:29,064 - __main__ - DEBUG - Request received
+2025-04-25 14:16:29,064 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 14:16:29,064 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 14:16:29,064 - __main__ - DEBUG - File name: tamil.jpg
+2025-04-25 14:16:29,068 - __main__ - DEBUG - Selected language code: mr
+2025-04-25 14:16:29,068 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 14:16:29,068 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 14:16:29,125 - __main__ - DEBUG - Image opened successfully: JPEG, size: (500, 500)
+2025-04-25 14:16:29,149 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 14:16:56,625 - __main__ - DEBUG - Request received
+2025-04-25 14:16:56,625 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 14:16:56,625 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 14:16:56,633 - __main__ - DEBUG - File name: tamil.jpg
+2025-04-25 14:16:56,633 - __main__ - DEBUG - Selected language code: mr
+2025-04-25 14:16:56,633 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 14:16:56,633 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 14:16:56,689 - __main__ - DEBUG - Image opened successfully: JPEG, size: (500, 500)
+2025-04-25 14:16:56,692 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 14:16:59,991 - __main__ - DEBUG - Detected language: te
+2025-04-25 14:20:52,405 - __main__ - DEBUG - Request received
+2025-04-25 14:20:52,408 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 14:20:52,408 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 14:20:52,408 - __main__ - DEBUG - File name: marathi.jpg
+2025-04-25 14:20:52,408 - __main__ - DEBUG - Selected language code: ur
+2025-04-25 14:20:52,408 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 14:20:52,408 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 14:20:52,519 - __main__ - DEBUG - Image opened successfully: JPEG, size: (500, 500)
+2025-04-25 14:20:52,542 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 14:20:56,653 - __main__ - DEBUG - Detected language: mr
+2025-04-25 14:24:38,609 - __main__ - DEBUG - Request received
+2025-04-25 14:24:38,609 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 14:24:38,609 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 14:24:38,609 - __main__ - DEBUG - File name: tamil.jpg
+2025-04-25 14:24:38,609 - __main__ - DEBUG - Selected language code: hi
+2025-04-25 14:24:38,609 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 14:24:38,609 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 14:24:38,691 - __main__ - DEBUG - Image opened successfully: JPEG, size: (500, 500)
+2025-04-25 14:24:38,701 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 14:24:42,557 - __main__ - DEBUG - Detected language: te
+2025-04-25 14:40:51,804 - __main__ - DEBUG - Request received
+2025-04-25 14:40:51,820 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 14:40:51,820 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 14:40:51,820 - __main__ - DEBUG - File name: 7f802d13-f6e3-4476-a9a8-37c7ac9733c7.jpeg
+2025-04-25 14:40:51,820 - __main__ - DEBUG - Selected language code: hi
+2025-04-25 14:40:51,820 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 14:40:51,820 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 14:40:51,904 - __main__ - DEBUG - Image opened successfully: JPEG, size: (2560, 2560)
+2025-04-25 14:40:52,120 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 14:41:14,860 - __main__ - DEBUG - Detected text: OTE LOCOTO
+2025-04-25 14:41:15,698 - __main__ - DEBUG - Detected language: pt
+2025-04-25 14:42:54,991 - __main__ - DEBUG - Request received
+2025-04-25 14:42:54,991 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 14:42:54,991 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 14:42:54,991 - __main__ - DEBUG - File name: medium-new-framed-quote-6-photo-frame-of-inspirational-thoughts-original-imafw2tuztqhbfja.webp
+2025-04-25 14:42:54,995 - __main__ - DEBUG - Selected language code: hi
+2025-04-25 14:42:54,995 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 14:42:54,995 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 14:42:55,288 - __main__ - DEBUG - Image opened successfully: WEBP, size: (778, 1000)
+2025-04-25 14:42:55,322 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 14:42:59,023 - __main__ - DEBUG - Detected text: Sturdy Edges
+WORK HARD
+IN SILENCE,
+LET SUCCESS
+BE YOUR
+NOISE.
+
+-Frank Ocean
+2025-04-25 14:42:59,739 - __main__ - DEBUG - Detected language: en
+2025-04-25 14:46:15,794 - __main__ - DEBUG - Request received
+2025-04-25 14:46:15,794 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 14:46:15,794 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 14:46:15,794 - __main__ - DEBUG - File name: medium-new-framed-quote-6-photo-frame-of-inspirational-thoughts-original-imafw2tuztqhbfja.webp
+2025-04-25 14:46:15,794 - __main__ - DEBUG - Selected language code: ta
+2025-04-25 14:46:15,794 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 14:46:15,794 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 14:46:15,810 - __main__ - DEBUG - Image opened successfully: WEBP, size: (778, 1000)
+2025-04-25 14:46:15,855 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 14:46:18,288 - __main__ - DEBUG - Detected text: Sturdy Edges
+WORK HARD
+IN SILENCE,
+LET SUCCESS
+BE YOUR
+NOISE.
+-Frank Ocean
+2025-04-25 14:46:18,292 - __main__ - DEBUG - Detected language: en
+2025-04-25 14:49:46,975 - __main__ - DEBUG - Request received
+2025-04-25 14:49:46,993 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 14:49:46,993 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 14:49:46,993 - __main__ - DEBUG - File name: WhatsApp Image 2025-03-24 at 17.52.00_05907463.jpg
+2025-04-25 14:49:46,995 - __main__ - DEBUG - Selected language code: hi
+2025-04-25 14:49:46,995 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 14:49:46,995 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 14:49:47,014 - __main__ - DEBUG - Image opened successfully: JPEG, size: (2734, 3828)
+2025-04-25 14:49:47,419 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 14:49:58,449 - __main__ - DEBUG - Detected text: BABU BANARASI DAS UNIVERSITY
+BBD City, Faizabad Road, Lucknow Uttar Pradesh - 226028 India
+School of Computer Applications
+Ref. BBDU/SCA/PRLTRG/2025/
+March 24, 2025
+Sub: Regarding Mid Semester Project Presentation and Evaluation of BCA(DS&AI) VI
+Semester Students.
+
+Dear Students,
+
+As per the information available with the Department, you are undergoing BCA(DS&AI) VI
+Semester Project Training
+
+In continuation of the earlier notification in form of separate notice as well as the Academic Calendar
+at the start of the Semester in this regard, you are being reminded that you have to appear for Mid
+Semester Presentation & Evaluation of the Project Work before a Panel of Evaluators appointed by
+the Department on prescribed dates notified earlier (i.e. March 29, 2025 onwards). You have to
+report in the School of Computer Applications at 9:30 a.m.
+
+In Mid Term Evaluation, you will have to present your Project through Power Point Presentation
+and demonstrating the work you have accomplished and the progress made on your project so far.
+The presentation must include Problem Statement; Requirement Analysis & Planning Steps;
+Software Requirement Specification; System Analysis Stages; Logical and Physical Design of the
+System; and the Tools and Platform being used to develop the said Software Project.
+
+You are also advised to bring the duly filled-in Training Detail Proforma, while coming to present
+your Project without any fail, if not submitted so far.
+
+For any clarification or support regarding your project, feel free to get in touch with Dr. Syed Anas
+Ansar and Ms. Sakshi Pandey, T&P Coordinator, who is ready to assist you.
+
+Wishing you a journey filled with triumphs and boundless opportunities for success.
+
+Dr. Syed Anas Ansar
+T&P Coordinator (SCA), BBDU
+
+Dr. Prabhash Ch. Pathak
+HEAD (SCA), BBDU
+
+Dr. Reena Srivastava
+DEAN (SCA), BBDU
+
+I Floor, CA-Block, BBD University, BBD City, Faizabad Road, Lucknow (U. P.) INDIA 226028
+PHONE: HEAD: 0522-6196242 Dept. T&P Cell: 9990462250
+www.bbdu.ac.in
+2025-04-25 14:49:58,462 - __main__ - DEBUG - Detected language: en
+2025-04-25 14:52:23,497 - __main__ - DEBUG - Request received
+2025-04-25 14:52:23,513 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 14:52:23,516 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 14:52:23,516 - __main__ - DEBUG - File name: WhatsApp Image 2025-03-24 at 17.52.00_05907463.jpg
+2025-04-25 14:52:23,516 - __main__ - DEBUG - Selected language code: en
+2025-04-25 14:52:23,516 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 14:52:23,516 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 14:52:23,543 - __main__ - DEBUG - Image opened successfully: JPEG, size: (2734, 3828)
+2025-04-25 14:52:23,931 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 14:52:54,705 - __main__ - DEBUG - Detected text: BABU BANARASI DAS UNIVERSITY
+BBD City, Faizabad Road, Lucknow Uttar Pradesh - 226028 India
+
+School of Computer Applications
+
+Ref. BBDU/SCA/PRLTRG/2025/
+March 24, 2025
+
+Sub: Regarding Mid Semester Project Presentation and Evaluation of BCA(DS&AI) VI
+Semester Students.
+
+Dear Students,
+
+As per the information available with the Department, you are undergoing BCA(DS&AI) VI
+Semester Project Training
+
+In continuation of the earlier notification in form of separate notice as well as the Academic Calendar
+at the start of the Semester in this regard, you are being reminded that you have to appear for Mid
+Semester Presentation & Evaluation of the Project Work before a Panel of Evaluators appointed by
+the Department on prescribed dates notified earlier (i.e. March 29, 2025 onwards). You have to
+report in the School of Computer Applications at 9:30 a.m.
+
+In Mid Term Evaluation, you will have to present your Project through Power Point Presentation
+and demonstrating the work you have accomplished and the progress made on your project so far.
+The presentation must include Problem Statement; Requirement Analysis & Planning Steps;
+Software Requirement Specification; System Analysis Stages; Logical and Physical Design of the
+System; and the Tools and Platform being used to develop the said Software Project.
+
+You are also advised to bring the duly filled-in Training Detail Proforma, while coming to present
+your Project without any fail, if not submitted so far.
+
+For any clarification or support regarding your project, feel free to get in touch with Dr. Syed Anas
+Ansar and Ms. Sakshi Pandey, T&P Coordinator, who is ready to assist you.
+
+Wishing you a journey filled with triumphs and boundless opportunities for success.
+
+Dr. Syed Anas Ansar
+T&P Coordinator (SCA), BBDU
+
+Dr. Prabhash Ch. Pathak
+HEAD (SCA), BBDU
+
+Dr. Reena Srivastava
+DEAN (SCA), BBDU
+
+I Floor, CA-Block, BBD University, BBD City, Faizabad Road, Lucknow (U. P.) INDIA 226028
+PHONE: HEAD: 0522-6196242 Dept. T&P Cell: 9990462250
+
+www.bbdu.ac.in
+2025-04-25 14:52:54,720 - __main__ - DEBUG - Detected language: en
+2025-04-25 14:52:57,849 - __main__ - DEBUG - Translated text: BABU BANARASI DAS UNIVERSITY
+BBD City, Faizabad Road, Lucknow Uttar Pradesh - 226028 India
+
+School of Computer Applications
+
+Ref. BBDU/SCA/PRLTRG/2025/
+March 24, 2025
+
+Sub: Regarding Mid Semester Project Presentation and Evaluation of BCA(DS&AI) VI
+Semester Students.
+
+Dear Students,
+
+This is a reminder regarding your BCA(DS&AI) VI Semester Project Training.  As previously notified in separate notices and the academic calendar, your Mid Semester Project Presentation & Evaluation will take place before a panel of evaluators starting March 29, 2025.  Please report to the School of Computer Applications at 9:30 a.m. on your assigned date.
+
+Your mid-term evaluation will involve a PowerPoint presentation demonstrating your project's progress.  This presentation must include: Problem Statement; Requirement Analysis & Planning Steps; Software Requirement Specification; System Analysis Stages; Logical and Physical Design of the System; and the Tools and Platform used.
+
+Please bring your completed Training Detail Proforma.
+
+For assistance, contact Dr. Syed Anas Ansar and Ms. Sakshi Pandey, T&P Coordinator.
+
+We wish you success.
+
+Dr. Syed Anas Ansar
+T&P Coordinator (SCA), BBDU
+
+Dr. Prabhash Ch. Pathak
+HEAD (SCA), BBDU
+
+Dr. Reena Srivastava
+DEAN (SCA), BBDU
+
+I Floor, CA-Block, BBD University, BBD City, Faizabad Road, Lucknow (U. P.) INDIA 226028
+PHONE: HEAD: 0522-6196242 Dept. T&P Cell: 9990462250
+
+www.bbdu.ac.in
+2025-04-25 15:31:20,850 - __main__ - DEBUG - Request received
+2025-04-25 15:31:20,854 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 15:31:20,854 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 15:31:20,854 - __main__ - DEBUG - File name: 1709107457393.png
+2025-04-25 15:31:20,854 - __main__ - DEBUG - Selected language code: hi
+2025-04-25 15:31:20,854 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 15:31:20,854 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 15:31:20,889 - __main__ - DEBUG - Image opened successfully: PNG, size: (1280, 720)
+2025-04-25 15:31:20,889 - __main__ - DEBUG - Converting image to RGB
+2025-04-25 15:31:20,907 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 15:31:24,172 - __main__ - DEBUG - Detected text: Plan
+Design
+Deploy
+Test
+Review
+Develop
+Launch
+
+AGILE
+METHODOLOGY
+2025-04-25 15:31:24,530 - __main__ - DEBUG - Detected language: en
+2025-04-25 20:37:41,966 - __main__ - DEBUG - Request received
+2025-04-25 20:37:41,966 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 20:37:41,966 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 20:37:41,966 - __main__ - DEBUG - File name: sanskrit_facts_arungeek-927x500_110916-102643.webp
+2025-04-25 20:37:41,966 - __main__ - DEBUG - Selected language code: hi
+2025-04-25 20:37:41,966 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 20:37:41,966 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 20:37:42,250 - __main__ - DEBUG - Image opened successfully: WEBP, size: (800, 419)
+2025-04-25 20:37:42,289 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 20:37:52,734 - __main__ - DEBUG - Request received
+2025-04-25 20:37:52,737 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 20:37:52,737 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 20:37:52,737 - __main__ - DEBUG - File name: sanskrit_facts_arungeek-927x500_110916-102643.webp
+2025-04-25 20:37:52,737 - __main__ - DEBUG - Selected language code: hi
+2025-04-25 20:37:52,737 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 20:37:52,737 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 20:37:52,840 - __main__ - DEBUG - Image opened successfully: WEBP, size: (800, 419)
+2025-04-25 20:37:52,854 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 20:37:56,739 - __main__ - DEBUG - Detected language: hi
+2025-04-25 20:38:37,640 - __main__ - DEBUG - Request received
+2025-04-25 20:38:37,643 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 20:38:37,643 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 20:38:37,643 - __main__ - DEBUG - File name: introducing-custom-calligraphy-text-vector-260nw-2467100687.webp
+2025-04-25 20:38:37,643 - __main__ - DEBUG - Selected language code: hi
+2025-04-25 20:38:37,643 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 20:38:37,643 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 20:38:37,659 - __main__ - DEBUG - Image opened successfully: WEBP, size: (520, 280)
+2025-04-25 20:38:37,674 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 20:38:38,790 - __main__ - DEBUG - Detected text: Introducing
+2025-04-25 20:38:38,810 - __main__ - DEBUG - Detected language: en
+2025-04-25 20:40:59,035 - __main__ - DEBUG - Request received
+2025-04-25 20:40:59,035 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 20:40:59,035 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 20:40:59,035 - __main__ - DEBUG - File name: sanskrit-language-shloka-lord-ganesha-260nw-2329402893.webp
+2025-04-25 20:40:59,035 - __main__ - DEBUG - Selected language code: en
+2025-04-25 20:40:59,035 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 20:40:59,035 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 20:40:59,060 - __main__ - DEBUG - Image opened successfully: WEBP, size: (520, 280)
+2025-04-25 20:40:59,060 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 20:41:00,940 - __main__ - DEBUG - Detected language: hi
+2025-04-25 20:41:01,694 - __main__ - DEBUG - Translated text: O Lord Ganesha, whose trunk is curved, whose body is large, and whose brilliance equals a million suns, please remove all obstacles from my endeavors, always.
+2025-04-25 20:41:36,847 - __main__ - DEBUG - Request received
+2025-04-25 20:41:36,847 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 20:41:36,847 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 20:41:36,847 - __main__ - DEBUG - File name: sanskrit-language-shloka-lord-ganesha-260nw-2329402893.webp
+2025-04-25 20:41:36,847 - __main__ - DEBUG - Selected language code: hi
+2025-04-25 20:41:36,847 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 20:41:36,847 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 20:41:36,875 - __main__ - DEBUG - Image opened successfully: WEBP, size: (520, 280)
+2025-04-25 20:41:36,887 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 20:41:38,510 - __main__ - DEBUG - Detected language: mr
+2025-04-25 20:42:14,701 - __main__ - DEBUG - Request received
+2025-04-25 20:42:14,703 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 20:42:14,703 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 20:42:14,703 - __main__ - DEBUG - File name: 64f49a3b1c30f3f76fb028f11e9023c6.jpg
+2025-04-25 20:42:14,703 - __main__ - DEBUG - Selected language code: en
+2025-04-25 20:42:14,703 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 20:42:14,703 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 20:42:14,726 - __main__ - DEBUG - Image opened successfully: JPEG, size: (452, 640)
+2025-04-25 20:42:14,756 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 20:42:17,157 - __main__ - DEBUG - Detected text: Our World
+
+The grass is green,
+The sky is blue,
+The moon is white,
+The clouds are, too.
+The sun is yellow,
+The trees are brown,
+The leaves are red
+When falling down.
+The sunset's orange,
+The air is clear,
+What a colorful world
+We have right here!
+
+© Copyright English Created Resources 2020
+2025-04-25 20:42:17,166 - __main__ - DEBUG - Detected language: en
+2025-04-25 20:42:18,194 - __main__ - DEBUG - Translated text: Our World
+
+The grass is green,
+The sky is blue,
+The moon is white,
+The clouds are, too.
+The sun is yellow,
+The trees are brown,
+The leaves are red
+When falling down.
+The sunset's orange,
+The air is clear,
+What a colorful world
+We have right here!
+2025-04-25 20:43:30,327 - __main__ - DEBUG - Request received
+2025-04-25 20:43:30,331 - __main__ - DEBUG - Files in request: ['file']
+2025-04-25 20:43:30,331 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-25 20:43:30,331 - __main__ - DEBUG - File name: 64f49a3b1c30f3f76fb028f11e9023c6.jpg
+2025-04-25 20:43:30,331 - __main__ - DEBUG - Selected language code: hi
+2025-04-25 20:43:30,331 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-25 20:43:30,331 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-25 20:43:30,345 - __main__ - DEBUG - Image opened successfully: JPEG, size: (452, 640)
+2025-04-25 20:43:30,364 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-25 20:43:32,231 - __main__ - DEBUG - Detected text: Our World
+
+The grass is green,
+The sky is blue,
+The moon is white,
+The clouds are, too.
+The sun is yellow,
+The trees are brown,
+The leaves are red
+When falling down.
+The sunset's orange,
+The air is clear,
+What a colorful world
+We have right here!
+
+© Copyright English Created Resources 2020
+2025-04-25 20:43:32,234 - __main__ - DEBUG - Detected language: en
+2025-04-30 14:17:30,378 - __main__ - DEBUG - Request received
+2025-04-30 14:17:30,395 - __main__ - DEBUG - Files in request: ['file']
+2025-04-30 14:17:30,395 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-30 14:17:30,395 - __main__ - DEBUG - File name: agile-model-2.jpg
+2025-04-30 14:17:30,395 - __main__ - DEBUG - Selected language code: hi
+2025-04-30 14:17:30,395 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-30 14:17:30,395 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-30 14:17:30,443 - __main__ - DEBUG - Image opened successfully: JPEG, size: (2000, 1500)
+2025-04-30 14:17:30,468 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-30 14:17:34,588 - __main__ - DEBUG - Detected text: Requirements 01
+02 Design
+Review 06
+AGILE
+DEVELOPMENT
+03 Development
+Deployment 05
+04 Testing
+Operational Phases of Agile Model
+2025-04-30 14:17:34,941 - __main__ - DEBUG - Detected language: en
+2025-04-30 14:18:13,277 - __main__ - DEBUG - Request received
+2025-04-30 14:18:13,283 - __main__ - DEBUG - Files in request: ['file']
+2025-04-30 14:18:13,283 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-30 14:18:13,283 - __main__ - DEBUG - File name: 64f49a3b1c30f3f76fb028f11e9023c6.jpg
+2025-04-30 14:18:13,283 - __main__ - DEBUG - Selected language code: hi
+2025-04-30 14:18:13,283 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-30 14:18:13,283 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-30 14:18:13,330 - __main__ - DEBUG - Image opened successfully: JPEG, size: (452, 640)
+2025-04-30 14:18:13,332 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-30 14:18:17,298 - __main__ - DEBUG - Detected text: Our World
+
+The grass is green,
+The sky is blue,
+The moon is white,
+The clouds are, too.
+The sun is yellow,
+The trees are brown,
+The leaves are red
+When falling down.
+The sunset's orange,
+The air is clear,
+What a colorful world
+We have right here!
+
+© Copyright English Created Resources 2020
+2025-04-30 14:18:17,605 - __main__ - DEBUG - Detected language: en
+2025-04-30 14:19:11,295 - __main__ - DEBUG - Request received
+2025-04-30 14:19:11,298 - __main__ - DEBUG - Files in request: ['file']
+2025-04-30 14:19:11,298 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-30 14:19:11,298 - __main__ - DEBUG - File name: sanskrit-language-shloka-lord-ganesha-260nw-2329402893.webp
+2025-04-30 14:19:11,298 - __main__ - DEBUG - Selected language code: hi
+2025-04-30 14:19:11,298 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-30 14:19:11,298 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-30 14:19:11,425 - __main__ - DEBUG - Image opened successfully: WEBP, size: (520, 280)
+2025-04-30 14:19:11,431 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-30 14:19:13,019 - __main__ - DEBUG - Detected language: hi
+2025-04-30 14:20:10,114 - __main__ - DEBUG - Request received
+2025-04-30 14:20:10,116 - __main__ - DEBUG - Files in request: ['file']
+2025-04-30 14:20:10,116 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-30 14:20:10,118 - __main__ - DEBUG - File name: sanskrit-language-shloka-lord-ganesha-260nw-2329402893.webp
+2025-04-30 14:20:10,118 - __main__ - DEBUG - Selected language code: hi
+2025-04-30 14:20:10,119 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-30 14:20:10,119 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-30 14:20:10,135 - __main__ - DEBUG - Image opened successfully: WEBP, size: (520, 280)
+2025-04-30 14:20:10,149 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-30 14:20:11,501 - __main__ - DEBUG - Detected language: hi
+2025-04-30 14:23:34,972 - __main__ - DEBUG - Request received
+2025-04-30 14:23:34,972 - __main__ - DEBUG - Files in request: ['file']
+2025-04-30 14:23:34,972 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-30 14:23:34,972 - __main__ - DEBUG - File name: 64f49a3b1c30f3f76fb028f11e9023c6.jpg
+2025-04-30 14:23:34,972 - __main__ - DEBUG - Selected language code: hi
+2025-04-30 14:23:34,978 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-30 14:23:34,978 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-30 14:23:34,987 - __main__ - DEBUG - Image opened successfully: JPEG, size: (452, 640)
+2025-04-30 14:23:35,004 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-30 14:23:37,191 - __main__ - DEBUG - Detected text: Our World
+
+The grass is green,
+The sky is blue,
+The moon is white,
+The clouds are, too.
+The sun is yellow,
+The trees are brown,
+The leaves are red
+When falling down.
+The sunset's orange,
+The air is clear,
+What a colorful world
+We have right here!
+
+© Copyright English Created Resources 2020
+2025-04-30 14:23:37,204 - __main__ - DEBUG - Detected language: en
+2025-04-30 14:24:11,215 - __main__ - DEBUG - Request received
+2025-04-30 14:24:11,216 - __main__ - DEBUG - Files in request: ['file']
+2025-04-30 14:24:11,216 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-30 14:24:11,216 - __main__ - DEBUG - File name: sanskrit-language-shloka-lord-ganesha-260nw-2329402893.webp
+2025-04-30 14:24:11,216 - __main__ - DEBUG - Selected language code: en
+2025-04-30 14:24:11,220 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-30 14:24:11,220 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-30 14:24:11,241 - __main__ - DEBUG - Image opened successfully: WEBP, size: (520, 280)
+2025-04-30 14:24:11,247 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-30 14:24:12,655 - __main__ - DEBUG - Detected language: hi
+2025-04-30 14:24:13,364 - __main__ - DEBUG - Translated text: O Lord Ganesha, with a curved trunk, large body, and radiance like a million suns, please remove all obstacles from my endeavors, always.
+2025-04-30 14:25:04,985 - __main__ - DEBUG - Request received
+2025-04-30 14:25:04,989 - __main__ - DEBUG - Files in request: ['file']
+2025-04-30 14:25:04,989 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-30 14:25:04,989 - __main__ - DEBUG - File name: sanskrit-language-shloka-lord-ganesha-260nw-2329402893.webp
+2025-04-30 14:25:04,989 - __main__ - DEBUG - Selected language code: hi
+2025-04-30 14:25:04,989 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-30 14:25:04,989 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-30 14:25:05,015 - __main__ - DEBUG - Image opened successfully: WEBP, size: (520, 280)
+2025-04-30 14:25:05,019 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-30 14:25:06,308 - __main__ - DEBUG - Detected language: hi
+2025-04-30 14:25:41,392 - __main__ - DEBUG - Request received
+2025-04-30 14:25:41,392 - __main__ - DEBUG - Files in request: ['file']
+2025-04-30 14:25:41,392 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-30 14:25:41,392 - __main__ - DEBUG - File name: sanskrit-language-shloka-lord-ganesha-260nw-2329402893.webp
+2025-04-30 14:25:41,392 - __main__ - DEBUG - Selected language code: hi
+2025-04-30 14:25:41,392 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-30 14:25:41,392 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-30 14:25:41,412 - __main__ - DEBUG - Image opened successfully: WEBP, size: (520, 280)
+2025-04-30 14:25:41,418 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-30 14:25:42,871 - __main__ - DEBUG - Detected language: hi
+2025-04-30 15:06:42,428 - __main__ - DEBUG - Request received
+2025-04-30 15:06:42,432 - __main__ - DEBUG - Files in request: ['file']
+2025-04-30 15:06:42,432 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-30 15:06:42,432 - __main__ - DEBUG - File name: medium-new-framed-quote-6-photo-frame-of-inspirational-thoughts-original-imafw2tuztqhbfja.webp
+2025-04-30 15:06:42,432 - __main__ - DEBUG - Selected language code: te
+2025-04-30 15:06:42,432 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-30 15:06:42,432 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-30 15:06:42,447 - __main__ - DEBUG - Image opened successfully: WEBP, size: (778, 1000)
+2025-04-30 15:06:42,479 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-30 15:06:45,712 - __main__ - DEBUG - Detected text: Sturdy Edges
+WORK HARD
+IN SILENCE,
+LET SUCCESS
+BE YOUR
+NOISE.
+
+-Frank Ocean
+2025-04-30 15:06:45,733 - __main__ - DEBUG - Detected language: en
+2025-04-30 15:08:27,037 - __main__ - DEBUG - Request received
+2025-04-30 15:08:27,039 - __main__ - DEBUG - Files in request: ['file']
+2025-04-30 15:08:27,039 - __main__ - DEBUG - Form data in request: ['language']
+2025-04-30 15:08:27,039 - __main__ - DEBUG - File name: iaas-paas-saas-comparison.jpg.optimal.jpg
+2025-04-30 15:08:27,039 - __main__ - DEBUG - Selected language code: hi
+2025-04-30 15:08:27,041 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-04-30 15:08:27,041 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-04-30 15:08:27,064 - __main__ - DEBUG - Image opened successfully: JPEG, size: (1320, 978)
+2025-04-30 15:08:27,097 - __main__ - DEBUG - Image converted to base64 successfully
+2025-04-30 15:08:29,997 - __main__ - DEBUG - Detected text: On-Premises
+Infrastructure
+as a Service
+Platform
+as a Service
+Software
+as a Service
+Applications
+Applications
+Applications
+Applications
+Data
+Data
+Data
+Data
+Runtime
+Runtime
+Runtime
+Runtime
+Middleware
+Middleware
+Middleware
+Middleware
+O/S
+O/S
+O/S
+O/S
+Virtualization
+Virtualization
+Virtualization
+Virtualization
+Servers
+Servers
+Servers
+Servers
+Storage
+Storage
+Storage
+Storage
+Networking
+Networking
+Networking
+Networking
+You Manage
+Other Manages
+2025-04-30 15:08:30,013 - __main__ - DEBUG - Detected language: en
+2025-05-19 14:07:14,719 - __main__ - INFO - Google OAuth client configured
+2025-05-19 14:07:31,509 - __main__ - INFO - Google login initiated
+2025-05-19 14:07:31,509 - __main__ - INFO - Google OAuth redirect URI: http://127.0.0.1:5000/login/google/authorize
+2025-05-19 14:07:42,049 - __main__ - INFO - Processing Google OAuth callback
+2025-05-19 14:07:42,617 - __main__ - DEBUG - Google OAuth token received: ya29.a0AW4...
+2025-05-19 14:07:42,871 - __main__ - INFO - Google user info received: email=automobile8284@gmail.com, name=AuTOMoBILE
+2025-05-19 14:07:42,872 - __main__ - INFO - Creating new user via Google OAuth: automobile8284
+2025-05-19 14:07:42,901 - __main__ - INFO - User automobile8284 logged in successfully via Google
+2025-05-19 14:07:47,848 - __main__ - INFO - User automobile8284 logging out
+2025-05-19 14:08:33,548 - __main__ - INFO - Google OAuth client configured
+2025-05-19 14:08:46,126 - __main__ - INFO - Google login initiated
+2025-05-19 14:08:46,126 - __main__ - INFO - Google OAuth redirect URI: http://127.0.0.1:5000/login/google/authorize
+2025-05-19 14:08:57,158 - __main__ - INFO - Processing Google OAuth callback
+2025-05-19 14:08:57,159 - __main__ - ERROR - Google OAuth error: access_denied: 
+2025-05-19 14:08:57,159 - __main__ - ERROR - Detailed OAuth error:
+Traceback (most recent call last):
+  File "D:\LOCOTO\app.py", line 200, in google_authorize
+    token = google.authorize_access_token()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aakas\miniconda3\Lib\site-packages\authlib\integrations\flask_client\apps.py", line 91, in authorize_access_token
+    raise OAuthError(error=error, description=description)
+authlib.integrations.base_client.errors.OAuthError: access_denied: 
+2025-05-19 14:09:00,626 - __main__ - INFO - Google login initiated
+2025-05-19 14:09:00,626 - __main__ - INFO - Google OAuth redirect URI: http://127.0.0.1:5000/login/google/authorize
+2025-05-19 17:17:20,899 - __main__ - INFO - Google OAuth client configured
+2025-05-19 17:17:35,518 - __main__ - INFO - Google login initiated
+2025-05-19 17:17:35,518 - __main__ - INFO - Google OAuth redirect URI: http://127.0.0.1:5000/login/google/authorize
+2025-05-19 17:17:44,540 - __main__ - INFO - Processing Google OAuth callback
+2025-05-19 17:17:44,934 - __main__ - DEBUG - Google OAuth token received: ya29.a0AW4...
+2025-05-19 17:17:45,123 - __main__ - INFO - Google user info received: email=akshatjaiswal017@gmail.com, name=Akshat Jaiswal
+2025-05-19 17:17:45,139 - __main__ - INFO - Creating new user via Google OAuth: akshatjaiswal017
+2025-05-19 17:17:45,172 - __main__ - INFO - User akshatjaiswal017 logged in successfully via Google
+2025-05-19 17:18:13,855 - __main__ - DEBUG - Request received
+2025-05-19 17:18:13,861 - __main__ - DEBUG - Files in request: ['file']
+2025-05-19 17:18:13,861 - __main__ - DEBUG - Form data in request: ['language']
+2025-05-19 17:18:13,861 - __main__ - DEBUG - File name: thought-of-the-day-for-school-notice-board-1741529075375_v.webp
+2025-05-19 17:18:13,861 - __main__ - DEBUG - Selected language code: gu
+2025-05-19 17:18:13,861 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-05-19 17:18:13,863 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-05-19 17:18:14,133 - __main__ - DEBUG - Image opened successfully: WEBP, size: (640, 360)
+2025-05-19 17:18:14,153 - __main__ - DEBUG - Image converted to base64 successfully
+2025-05-19 17:18:17,136 - __main__ - DEBUG - Detected text: "DREAM BIG, WORK HARD,
+AND STAY HUMBLE."
+Thought of The Day:-
+2025-05-19 17:18:17,840 - __main__ - DEBUG - Detected language: en
+2025-05-19 21:40:30,550 - __main__ - INFO - Google OAuth client configured
+2025-05-19 21:41:33,217 - __main__ - INFO - Google login initiated
+2025-05-19 21:41:33,217 - __main__ - INFO - Google OAuth redirect URI: http://127.0.0.1:5000/login/google/authorize
+2025-05-19 21:41:41,551 - __main__ - INFO - Processing Google OAuth callback
+2025-05-19 21:41:42,018 - __main__ - DEBUG - Google OAuth token received: ya29.a0AW4...
+2025-05-19 21:41:42,260 - __main__ - INFO - Google user info received: email=aakashjaiswal8284@gmail.com, name=Akshat Jaiswal
+2025-05-19 21:41:42,280 - __main__ - INFO - Creating new user via Google OAuth: aakashjaiswal8284
+2025-05-19 21:41:42,302 - __main__ - INFO - User aakashjaiswal8284 logged in successfully via Google
+2025-05-19 21:55:08,693 - __main__ - INFO - Google OAuth client configured
+2025-05-19 21:56:09,138 - __main__ - INFO - Google OAuth client configured
+2025-05-19 22:08:30,894 - __main__ - INFO - User aakashjaiswal8284 logging out
+2025-05-19 23:18:41,482 - __main__ - INFO - Google OAuth client configured
+2025-05-19 23:18:54,077 - __main__ - INFO - Google login initiated
+2025-05-19 23:18:54,077 - __main__ - INFO - Google OAuth redirect URI: http://127.0.0.1:5000/login/google/authorize
+2025-05-19 23:19:00,003 - __main__ - INFO - Processing Google OAuth callback
+2025-05-19 23:19:00,366 - __main__ - DEBUG - Google OAuth token received: ya29.a0AW4...
+2025-05-19 23:19:00,597 - __main__ - INFO - Google user info received: email=akshatjaiswal017@gmail.com, name=Akshat Jaiswal
+2025-05-19 23:19:00,651 - __main__ - INFO - User akshatjaiswal017 logged in successfully via Google
+2025-05-19 23:20:04,324 - __main__ - DEBUG - Request received
+2025-05-19 23:20:04,327 - __main__ - DEBUG - Files in request: ['file']
+2025-05-19 23:20:04,327 - __main__ - DEBUG - Form data in request: ['language']
+2025-05-19 23:20:04,327 - __main__ - DEBUG - File name: 5916f8e582bf87ef789031da1393e719.jpg
+2025-05-19 23:20:04,327 - __main__ - DEBUG - Selected language code: en
+2025-05-19 23:20:04,327 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-05-19 23:20:04,327 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-05-19 23:20:04,378 - __main__ - DEBUG - Image opened successfully: JPEG, size: (236, 129)
+2025-05-19 23:20:04,396 - __main__ - DEBUG - Image converted to base64 successfully
+2025-05-19 23:20:07,905 - __main__ - DEBUG - Detected language: pa
+2025-05-19 23:20:08,590 - __main__ - DEBUG - Translated text: Everyone has their own time.
+2025-05-19 23:20:34,695 - __main__ - DEBUG - Request received
+2025-05-19 23:20:34,695 - __main__ - DEBUG - Files in request: ['file']
+2025-05-19 23:20:34,695 - __main__ - DEBUG - Form data in request: ['language']
+2025-05-19 23:20:34,695 - __main__ - DEBUG - File name: images.jpg
+2025-05-19 23:20:34,695 - __main__ - DEBUG - Selected language code: hi
+2025-05-19 23:20:34,695 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-05-19 23:20:34,695 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-05-19 23:20:34,704 - __main__ - DEBUG - Image opened successfully: JPEG, size: (168, 300)
+2025-05-19 23:20:34,706 - __main__ - DEBUG - Image converted to base64 successfully
+2025-05-19 23:20:36,260 - __main__ - DEBUG - Detected language: gu
+2025-05-19 23:22:26,550 - __main__ - DEBUG - Request received
+2025-05-19 23:22:26,550 - __main__ - DEBUG - Files in request: ['file']
+2025-05-19 23:22:26,550 - __main__ - DEBUG - Form data in request: ['language']
+2025-05-19 23:22:26,550 - __main__ - DEBUG - File name: Screenshot (415).png
+2025-05-19 23:22:26,550 - __main__ - DEBUG - Selected language code: en
+2025-05-19 23:22:26,550 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-05-19 23:22:26,550 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-05-19 23:22:26,582 - __main__ - DEBUG - Image opened successfully: PNG, size: (633, 810)
+2025-05-19 23:22:26,582 - __main__ - DEBUG - Converting image to RGB
+2025-05-19 23:22:26,638 - __main__ - DEBUG - Image converted to base64 successfully
+2025-05-19 23:22:28,813 - __main__ - DEBUG - Detected language: kn
+2025-05-19 23:22:29,495 - __main__ - DEBUG - Translated text: In the kingdom of books,
+my boundless joy,
+the world is hidden.
+2025-05-19 23:22:58,899 - __main__ - DEBUG - Request received
+2025-05-19 23:22:58,899 - __main__ - DEBUG - Files in request: ['file']
+2025-05-19 23:22:58,899 - __main__ - DEBUG - Form data in request: ['language']
+2025-05-19 23:22:58,899 - __main__ - DEBUG - File name: 64f49a3b1c30f3f76fb028f11e9023c6.jpg
+2025-05-19 23:22:58,899 - __main__ - DEBUG - Selected language code: bn
+2025-05-19 23:22:58,899 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-05-19 23:22:58,899 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-05-19 23:22:58,913 - __main__ - DEBUG - Image opened successfully: JPEG, size: (452, 640)
+2025-05-19 23:22:58,929 - __main__ - DEBUG - Image converted to base64 successfully
+2025-05-19 23:23:01,543 - __main__ - DEBUG - Detected text: Our World
+
+The grass is green,
+The sky is blue,
+The moon is white,
+The clouds are, too.
+The sun is yellow,
+The trees are brown,
+The leaves are red
+When falling down.
+The sunset's orange,
+The air is clear,
+What a colorful world
+We have right here!
+
+© Copyright English Created Resources 2020
+2025-05-19 23:23:01,550 - __main__ - DEBUG - Detected language: en
+2025-05-19 23:23:25,186 - __main__ - INFO - User akshatjaiswal017 logging out
+2025-05-20 07:22:03,004 - __main__ - INFO - Google OAuth client configured
+2025-05-20 07:24:18,990 - __main__ - INFO - Google OAuth client configured
+2025-05-20 09:52:34,250 - __main__ - INFO - Google OAuth client configured
+2025-05-20 10:24:43,225 - __main__ - INFO - Google login initiated
+2025-05-20 10:24:43,225 - __main__ - INFO - Google OAuth redirect URI: http://127.0.0.1:5000/login/google/authorize
+2025-05-20 10:24:47,855 - __main__ - INFO - Processing Google OAuth callback
+2025-05-20 10:24:48,488 - __main__ - DEBUG - Google OAuth token received: ya29.a0AW4...
+2025-05-20 10:24:48,811 - __main__ - INFO - Google user info received: email=aakashjaiswal8284@gmail.com, name=Akshat Jaiswal
+2025-05-20 10:24:48,886 - __main__ - INFO - User aakashjaiswal8284 logged in successfully via Google
+2025-05-20 10:26:45,826 - __main__ - DEBUG - Request received
+2025-05-20 10:26:45,826 - __main__ - DEBUG - Files in request: ['file']
+2025-05-20 10:26:45,826 - __main__ - DEBUG - Form data in request: ['language']
+2025-05-20 10:26:45,826 - __main__ - DEBUG - File name: 0b2234b30068a507642da7d31b40b11b.jpg
+2025-05-20 10:26:45,826 - __main__ - DEBUG - Selected language code: hi
+2025-05-20 10:26:45,826 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-05-20 10:26:45,826 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-05-20 10:26:45,937 - __main__ - DEBUG - Image opened successfully: JPEG, size: (236, 327)
+2025-05-20 10:26:45,954 - __main__ - DEBUG - Image converted to base64 successfully
+2025-05-20 10:26:50,226 - __main__ - DEBUG - Detected language: ta
+2025-05-24 09:51:00,169 - __main__ - INFO - Google OAuth client configured
+2025-05-24 09:51:46,675 - __main__ - DEBUG - Request received
+2025-05-24 09:51:46,706 - __main__ - DEBUG - Files in request: ['file']
+2025-05-24 09:51:46,706 - __main__ - DEBUG - Form data in request: ['language']
+2025-05-24 09:51:46,706 - __main__ - DEBUG - File name: Apple-Data-Privacy-Challenges-Akshat_Jaiswal.pdf
+2025-05-24 09:51:46,706 - __main__ - DEBUG - Selected language code: hi
+2025-05-24 09:51:46,706 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-05-24 09:51:46,706 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-05-24 09:51:46,988 - __main__ - ERROR - Error in upload_to_gemini: cannot identify image file 'static/uploads\\temp_image.jpg'
+2025-05-24 09:51:46,988 - __main__ - ERROR - Detailed error:
+Traceback (most recent call last):
+  File "D:\LOCOTO\app.py", line 355, in upload_to_gemini
+    with Image.open(temp_path) as image:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aakas\miniconda3\Lib\site-packages\PIL\Image.py", line 3532, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file 'static/uploads\\temp_image.jpg'
+2025-05-24 09:51:46,999 - __main__ - ERROR - Failed to process image
+2025-05-24 09:51:53,059 - __main__ - DEBUG - Request received
+2025-05-24 09:51:53,065 - __main__ - DEBUG - Files in request: ['file']
+2025-05-24 09:51:53,065 - __main__ - DEBUG - Form data in request: ['language']
+2025-05-24 09:51:53,065 - __main__ - DEBUG - File name: Apple-Data-Privacy-Challenges-Akshat_Jaiswal.pdf
+2025-05-24 09:51:53,065 - __main__ - DEBUG - Selected language code: hi
+2025-05-24 09:51:53,065 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-05-24 09:51:53,065 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-05-24 09:51:53,094 - __main__ - ERROR - Error in upload_to_gemini: cannot identify image file 'static/uploads\\temp_image.jpg'
+2025-05-24 09:51:53,094 - __main__ - ERROR - Detailed error:
+Traceback (most recent call last):
+  File "D:\LOCOTO\app.py", line 355, in upload_to_gemini
+    with Image.open(temp_path) as image:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aakas\miniconda3\Lib\site-packages\PIL\Image.py", line 3532, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file 'static/uploads\\temp_image.jpg'
+2025-05-24 09:51:53,101 - __main__ - ERROR - Failed to process image
+2025-05-24 09:52:11,530 - __main__ - DEBUG - Request received
+2025-05-24 09:52:11,541 - __main__ - DEBUG - Files in request: ['file']
+2025-05-24 09:52:11,541 - __main__ - DEBUG - Form data in request: ['language']
+2025-05-24 09:52:11,541 - __main__ - DEBUG - File name: Akshat-Jaiswal-Resume.pdf
+2025-05-24 09:52:11,541 - __main__ - DEBUG - Selected language code: hi
+2025-05-24 09:52:11,541 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-05-24 09:52:11,541 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-05-24 09:52:11,568 - __main__ - ERROR - Error in upload_to_gemini: cannot identify image file 'static/uploads\\temp_image.jpg'
+2025-05-24 09:52:11,569 - __main__ - ERROR - Detailed error:
+Traceback (most recent call last):
+  File "D:\LOCOTO\app.py", line 355, in upload_to_gemini
+    with Image.open(temp_path) as image:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aakas\miniconda3\Lib\site-packages\PIL\Image.py", line 3532, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file 'static/uploads\\temp_image.jpg'
+2025-05-24 09:52:11,569 - __main__ - ERROR - Failed to process image
+2025-05-24 09:52:22,683 - __main__ - DEBUG - Request received
+2025-05-24 09:52:22,687 - __main__ - DEBUG - Files in request: ['file']
+2025-05-24 09:52:22,687 - __main__ - DEBUG - Form data in request: ['language']
+2025-05-24 09:52:22,687 - __main__ - DEBUG - File name: thought-of-the-day-for-school-notice-board-1741529075375_v.webp
+2025-05-24 09:52:22,687 - __main__ - DEBUG - Selected language code: hi
+2025-05-24 09:52:22,687 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-05-24 09:52:22,687 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-05-24 09:52:22,725 - __main__ - DEBUG - Image opened successfully: WEBP, size: (640, 360)
+2025-05-24 09:52:22,739 - __main__ - DEBUG - Image converted to base64 successfully
+2025-05-24 09:52:25,812 - __main__ - DEBUG - Detected text: "DREAM BIG, WORK HARD,
+AND STAY HUMBLE."
+Thought of The Day:-
+2025-05-24 09:52:26,558 - __main__ - DEBUG - Detected language: en
+2025-06-01 12:37:15,667 - __main__ - INFO - Google OAuth client configured
+2025-06-01 12:38:40,378 - __main__ - INFO - Google login initiated
+2025-06-01 12:38:40,378 - __main__ - INFO - Google OAuth redirect URI: http://127.0.0.1:5000/login/google/authorize
+2025-06-01 12:38:44,324 - __main__ - INFO - Processing Google OAuth callback
+2025-06-01 12:38:44,778 - __main__ - DEBUG - Google OAuth token received: ya29.a0AW4...
+2025-06-01 12:38:44,946 - __main__ - INFO - Google user info received: email=aakashjaiswal8284@gmail.com, name=Akshat Jaiswal
+2025-06-01 12:38:44,973 - __main__ - INFO - User aakashjaiswal8284 logged in successfully via Google
+2025-06-01 12:40:11,109 - __main__ - DEBUG - Request received
+2025-06-01 12:40:11,117 - __main__ - DEBUG - Files in request: ['file']
+2025-06-01 12:40:11,117 - __main__ - DEBUG - Form data in request: ['language']
+2025-06-01 12:40:11,117 - __main__ - DEBUG - File name: capture.png
+2025-06-01 12:40:11,117 - __main__ - DEBUG - Selected language code: hi
+2025-06-01 12:40:11,117 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-06-01 12:40:11,117 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-06-01 12:40:11,206 - __main__ - DEBUG - Image opened successfully: PNG, size: (640, 480)
+2025-06-01 12:40:11,206 - __main__ - DEBUG - Converting image to RGB
+2025-06-01 12:40:11,223 - __main__ - DEBUG - Image converted to base64 successfully
+2025-06-01 12:40:15,838 - __main__ - DEBUG - Detected language: en
+2025-06-01 12:41:08,313 - __main__ - DEBUG - Request received
+2025-06-01 12:41:08,318 - __main__ - DEBUG - Files in request: ['file']
+2025-06-01 12:41:08,318 - __main__ - DEBUG - Form data in request: ['language']
+2025-06-01 12:41:08,318 - __main__ - DEBUG - File name: capture.png
+2025-06-01 12:41:08,318 - __main__ - DEBUG - Selected language code: hi
+2025-06-01 12:41:08,318 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-06-01 12:41:08,318 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-06-01 12:41:08,341 - __main__ - DEBUG - Image opened successfully: PNG, size: (640, 480)
+2025-06-01 12:41:08,341 - __main__ - DEBUG - Converting image to RGB
+2025-06-01 12:41:08,358 - __main__ - DEBUG - Image converted to base64 successfully
+2025-06-01 12:41:10,474 - __main__ - DEBUG - Detected text: Hello what are you doing in india??
++
+Deep Research Canvas
+Gemini can make mistakes, so double-c
+1 2 3 4 5 6 7 8 9 0
+QWERTYUIOP
+ASDFGHJKL
+2025-06-01 12:41:10,497 - __main__ - DEBUG - Detected language: en
+2025-06-01 12:41:59,235 - __main__ - DEBUG - Request received
+2025-06-01 12:41:59,236 - __main__ - DEBUG - Files in request: ['file']
+2025-06-01 12:41:59,236 - __main__ - DEBUG - Form data in request: ['language']
+2025-06-01 12:41:59,236 - __main__ - DEBUG - File name: c4c481d04bbb80300efffa05fc0e3738.jpg
+2025-06-01 12:41:59,236 - __main__ - DEBUG - Selected language code: hi
+2025-06-01 12:41:59,236 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-06-01 12:41:59,236 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-06-01 12:41:59,243 - __main__ - DEBUG - Image opened successfully: JPEG, size: (730, 1264)
+2025-06-01 12:41:59,293 - __main__ - DEBUG - Image converted to base64 successfully
+2025-06-01 12:42:01,825 - __main__ - DEBUG - Detected language: ta
+2025-06-01 12:43:04,826 - __main__ - DEBUG - Request received
+2025-06-01 12:43:04,830 - __main__ - DEBUG - Files in request: ['file']
+2025-06-01 12:43:04,831 - __main__ - DEBUG - Form data in request: ['language']
+2025-06-01 12:43:04,831 - __main__ - DEBUG - File name: c4c481d04bbb80300efffa05fc0e3738.jpg
+2025-06-01 12:43:04,831 - __main__ - DEBUG - Selected language code: en
+2025-06-01 12:43:04,832 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-06-01 12:43:04,832 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-06-01 12:43:04,844 - __main__ - DEBUG - Image opened successfully: JPEG, size: (730, 1264)
+2025-06-01 12:43:04,877 - __main__ - DEBUG - Image converted to base64 successfully
+2025-06-01 12:43:07,192 - __main__ - DEBUG - Detected language: ta
+2025-06-01 12:43:07,927 - __main__ - DEBUG - Translated text: If you are going to trust someone, don't trust their words.  Watch their actions and then trust.
+2025-06-02 07:39:12,610 - __main__ - INFO - Google OAuth client configured
+2025-06-02 09:49:57,666 - __main__ - INFO - Google OAuth client configured
+2025-06-02 09:55:55,452 - app - INFO - Google OAuth client configured
+2025-06-02 09:58:49,082 - __main__ - INFO - Google OAuth client configured
+2025-06-02 09:59:37,688 - app - INFO - Google OAuth client configured
+2025-06-02 09:59:50,446 - __main__ - INFO - Google OAuth client configured
+2025-06-02 10:00:08,739 - __main__ - INFO - User aakashjaiswal8284 logging out
+2025-06-02 10:01:20,118 - __main__ - WARNING - Failed login attempt for username/email: aakashjaiswal8284@gmail.com
+2025-06-02 10:01:31,143 - __main__ - WARNING - Failed login attempt for username/email: aakashjaiswal8284@gmail.com
+2025-06-02 10:01:37,302 - __main__ - INFO - Google login initiated
+2025-06-02 10:01:37,302 - __main__ - INFO - Google OAuth redirect URI: http://127.0.0.1:5000/login/google/authorize
+2025-06-02 10:01:43,135 - __main__ - INFO - Processing Google OAuth callback
+2025-06-02 10:01:43,855 - __main__ - DEBUG - Google OAuth token received: ya29.a0AW4...
+2025-06-02 10:01:44,151 - __main__ - INFO - Google user info received: email=aakashjaiswal8284@gmail.com, name=Akshat Jaiswal
+2025-06-02 10:01:44,191 - __main__ - INFO - User aakashjaiswal8284 logged in successfully via Google
+2025-06-02 10:41:35,650 - __main__ - INFO - User aakashjaiswal8284 logging out
+2025-06-02 10:42:24,261 - __main__ - INFO - Google login initiated
+2025-06-02 10:42:24,261 - __main__ - INFO - Google OAuth redirect URI: http://127.0.0.1:5000/login/google/authorize
+2025-06-02 10:42:28,405 - __main__ - INFO - Processing Google OAuth callback
+2025-06-02 10:42:28,962 - __main__ - DEBUG - Google OAuth token received: ya29.a0AW4...
+2025-06-02 10:42:29,494 - __main__ - INFO - Google user info received: email=aakashjaiswal8284@gmail.com, name=Akshat Jaiswal
+2025-06-02 10:42:29,509 - __main__ - INFO - User aakashjaiswal8284 logged in successfully via Google
+2025-06-02 10:43:07,547 - __main__ - DEBUG - Request received
+2025-06-02 10:43:07,547 - __main__ - DEBUG - Files in request: ['file']
+2025-06-02 10:43:07,547 - __main__ - DEBUG - Form data in request: ['language']
+2025-06-02 10:43:07,547 - __main__ - DEBUG - File name: c4c481d04bbb80300efffa05fc0e3738.jpg
+2025-06-02 10:43:07,547 - __main__ - DEBUG - Selected language code: hi
+2025-06-02 10:43:07,547 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-06-02 10:43:07,547 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-06-02 10:43:07,643 - __main__ - DEBUG - Image opened successfully: JPEG, size: (730, 1264)
+2025-06-02 10:43:07,678 - __main__ - DEBUG - Image converted to base64 successfully
+2025-06-02 10:43:12,768 - __main__ - DEBUG - Detected language: ta
+2025-06-02 20:06:21,551 - __main__ - INFO - Google OAuth client configured
+2025-06-03 10:20:06,438 - __main__ - INFO - Google OAuth client configured
+2025-06-03 10:21:33,588 - __main__ - DEBUG - Request received
+2025-06-03 10:21:33,588 - __main__ - DEBUG - Files in request: ['file']
+2025-06-03 10:21:33,588 - __main__ - DEBUG - Form data in request: ['language']
+2025-06-03 10:21:33,588 - __main__ - DEBUG - File name: 66cd5df29849c09682858494_Copy of Top Down (2).png
+2025-06-03 10:21:33,588 - __main__ - DEBUG - Selected language code: pa
+2025-06-03 10:21:33,588 - __main__ - DEBUG - Starting upload_to_gemini function
+2025-06-03 10:21:33,588 - __main__ - DEBUG - Image file type: <class 'werkzeug.datastructures.file_storage.FileStorage'>
+2025-06-03 10:21:33,708 - __main__ - DEBUG - Image opened successfully: PNG, size: (1080, 600)
+2025-06-03 10:21:33,708 - __main__ - DEBUG - Converting image to RGB
+2025-06-03 10:21:33,750 - __main__ - DEBUG - Image converted to base64 successfully
+2025-06-03 10:21:37,778 - __main__ - DEBUG - Detected text: FOUNTAIN9
+Top-Down Vs. Bottom-Up Approch for Demand Planning.
+
+Top Down
+Inaccurate predictions
+and lack of visibility at
+the most granular
+levels of the supply
+chain.
+
+VS
+
+Bottom Up
+Accurate predictions
+rolled up from the most
+granular levels of supply
+chain and visibility
+across SKU/Category
+levels.
+2025-06-03 10:21:38,482 - __main__ - DEBUG - Detected language: en
+2025-06-03 11:51:52,060 - __main__ - INFO - Google OAuth client configured
+2025-06-06 09:02:20,863 - __main__ - INFO - Google OAuth client configured

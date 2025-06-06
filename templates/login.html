@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Login to LOCOTO - Language On Camera - Translate On The Go">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>LOCOTO - Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/css/fontawesome.css">
+    <link rel="stylesheet" href="static/css/templatemo-onix-digital.css">
+    <link rel="stylesheet" href="static/css/animated.css">
+    <link rel="stylesheet" href="static/css/owl.css">
+
+    <style>
+        /* Login form styles merged with the template style */
+        .login-section {
+            margin-top: 120px;
+            padding: 80px 0;
+        }
+
+        .login-card {
+            display: flex;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        .card-left {
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .card-left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-right {
+            width: 50%;
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .login-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            color: #a05334;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .login-welcome {
+            font-size: 18px;
+            margin-bottom: 40px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: #2a2a2a;
+        }
+
+        .login-input-group {
+            margin-bottom: 20px;
+        }
+
+        .login-input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2a2a2a;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .login-input-group input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #eee;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s;
+        }
+
+        .login-input-group input:focus {
+            border-color: #03a4ed;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(3, 164, 237, 0.1);
+        }
+
+        .login-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .login-btn {
+            padding: 12px 40px;
+            background-image: linear-gradient(to right, #1e3c72 0%, #03a4ed 51%, #1e3c72 100%);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.5s;
+            background-size: 200% auto;
+        }
+
+        .login-btn:hover {
+            background-position: right center;
+        }
+
+        .forgot-password {
+            font-size: 14px;
+            color: #03a4ed;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .forgot-password:hover {
+            color: #1e3c72;
+        }
+
+        .or-divider {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #999;
+            position: relative;
+        }
+
+        .or-divider::before,
+        .or-divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            height: 1px;
+            background-color: #eee;
+        }
+
+        .or-divider::before {
+            left: 0;
+        }
+
+        .or-divider::after {
+            right: 0;
+        }
+
+        .google-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 12px;
+            background-color: #fff;
+            color: #555;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .google-btn:hover {
+            background-color: #f8f8f8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .google-btn .google-icon {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .login-card {
+                flex-direction: column;
+            }
+
+            .card-left {
+                display: none;
+            }
+
+            .card-right {
+                width: 100%;
+                padding: 30px;
+            }
+
+            .login-title {
+                font-size: 28px;
+            }
+
+            .login-actions {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .login-btn {
+                width: 100%;
+            }
+        }
+    </style>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <div class="logo">
+              <img src="static/images/ChatGPT Image Apr 13, 2025, 03_15_04 PM.png" alt="LOCOTO" width="150" height="150">
+            </div>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="/">Home</a></li>
+              {% if not session.get('logged_in') %}
+                <li class="scroll-to-section"><a href="register">Sign-Up</a></li>
+                <li class="scroll-to-section"><a href="login" class="active">Sign-In</a></li>
+              {% else %}
+                <li class="scroll-to-section"><a href="#">Welcome {{ session.get('username') }}</a></li>
+                <li class="scroll-to-section"><a href="upload">Upload</a></li>  
+                {% if session.get('is_admin') %}
+                <li class="scroll-to-section"><a href="admin/users">Admin Panel</a></li>
+                {% endif %}
+                <li class="scroll-to-section"><a href="logout">Logout</a></li>
+              {% endif %}
+              <li class="scroll-to-section"><a href="aboutus">About Us</a></li>
+            </ul>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="login-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="login-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="card-left">
+              <img src="static/images/Sign.jpeg" alt="Sign">
+            </div>
+            <div class="card-right">
+              <h1 class="login-title">LOCOTO</h1>
+              <h2 class="login-welcome">Welcome to LOCOTO</h2>
+              <form action="#" method="POST">
+                <div class="login-input-group">
+                  <label for="username">Username or Email</label>
+                  <input type="text" id="username" name="username" required>
+                </div>
+                <div class="login-input-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary w-100 mb-3">Login</button>
+                  <a href="{{ url_for('google_login') }}" class="btn btn-danger w-100 mb-3">
+                    <i class="fab fa-google"></i> Login with Google
+                  </a>
+                </div>
+                <div class="text-center mt-3">
+                  <a href="{{ url_for('forgot_password') }}">Forgot Password?</a>
+                  <p class="mt-2">Don't have an account? <a href="{{ url_for('register') }}">Sign Up</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-dec">
+    <img src="static/images/footer-dec.png" alt="">
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright">
+            <p>Copyright © 2025 LOCOTO | All Rights Reserved. 
+          </div>
+        </div>  
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/js/owl-carousel.js"></script>
+  <script src="static/js/animation.js"></script>
+  <script src="static/js/imagesloaded.js"></script>
+  <script src="static/js/custom.js"></script>
+</body>
+</html>
