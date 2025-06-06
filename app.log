@@ -1020,3 +1020,11 @@ levels.
 2025-06-03 10:21:38,482 - __main__ - DEBUG - Detected language: en
 2025-06-03 11:51:52,060 - __main__ - INFO - Google OAuth client configured
 2025-06-06 09:02:20,863 - __main__ - INFO - Google OAuth client configured
+2025-06-06 12:09:28,238 - __main__ - INFO - Google OAuth client configured
+2025-06-06 12:10:03,558 - __main__ - INFO - Google OAuth client configured
+2025-06-06 12:10:28,949 - __main__ - INFO - Google OAuth client configured
+2025-06-06 12:14:39,644 - __main__ - INFO - Google OAuth client configured
+2025-06-06 12:14:53,842 - __main__ - INFO - Google login initiated
+2025-06-06 12:14:53,842 - __main__ - INFO - Google OAuth redirect URI: http://127.0.0.1:5000/login/google/authorize
+2025-06-06 12:15:42,704 - __main__ - INFO - Google login initiated
+2025-06-06 12:15:42,704 - __main__ - INFO - Google OAuth redirect URI: http://127.0.0.1:5000/login/google/authorize
